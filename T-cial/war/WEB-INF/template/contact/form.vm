@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta charset="utf-8" />
+<meta name="description" content="「T-cial」は、生徒・保護者に本当の価値あるサービスを提供するための家庭教師グループです。" />
+<meta name="keywords" content="横浜,反町,家庭教師,塾,予備校,受験,授業,英語,数学,国語,理科,社会,T-cial、ティーシャル,てぃーしゃる,tcial" />
+<link rel="stylesheet" href="../css/front/beforelogin/style.css" type="text/css" media="screen,print" />
+<link rel="alternate" type="application/rss+xml" title="T-cial RSS Feed" href="RSS URL" />
+<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+<link rel="shortcut icon" href="img/favicon.ico" />
+<title>T-cial - 神奈川・横浜の家庭教師グループ</title>
+</head>
+<body>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+ 	 var js, fjs = d.getElementsByTagName(s)[0];
+ 	 if (d.getElementById(id)) return;
+ 	 js = d.createElement(s); js.id = id;
+ 	 js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=311115812312407";
+ 	 fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<div id="header">
+		<div class="container">
+			<div class="header-left">
+				<a href="/"><img class="header" title="T-cial" alt ="T-cial" src="../img/logo.jpg" /></a>
+			</div>
+			<div class="header-right">
+				<ul class="menu">
+					<li><a href="#about" title="T-cialのご説明">T-cialとは</a>
+					<li><a href="#comparison" title="T-cialと他塾との比較">他塾との比較</a></li>
+					<li><a href="#start" title="授業を開始するまでの手順">はじめかた</a></li>
+					<li><a href="#teachers" title="T-cialの講師陣">講師のご紹介</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="pankuzu">
+		<a href="/">トップページ</a>
+		>
+		問い合わせフォーム
+	</div>
+
+	<div id="start-permalink">
+		<div class="container">
+			<h1>はじめかた</h1>
+			<ul class="list3">
+				<li>
+					<h3>
+					<span>1.</span>
+					問い合わせ＋面談</h3>
+					<p>専用フォームに情報を入力し、送信してください。すぐに折り返し面談の日時等のご相談をお送りします。日時が決まったらこちらからお伺いして、状況の確認とプランのご提案をいたします。面談は、Skype等を用いて行うこともできます。</p>
+				</li>
+				<li>
+					<h3><span>2.</span>
+					授業の体験</h3>
+					<p>T-cialのサービスをしっかりとご理解いただくため、体験授業の受講をお勧めしています。体験授業期間において、T-cialの講師がどう動くのか、生徒の様子がどのように変わっていくのかをイメージしていただきます。</p>
+				</li>
+				<li>
+					<h3><span>3.</span>
+					授業開始</h3>
+					<p>内容に納得をいただいたら契約となり、授業をはじめます。開始後も、生徒・保護者とは丁寧に連絡を取りながら柔軟に対応していきます。要望の変化に合わせて、プランは変更していくことができます。</p>
+				</li>
+			</ul><div class="clear"></div>
+		</div>
+	</div>
+
+	<div id="contact">
+		<div class="container">
+			<div class="guide on">入力画面</div>
+			<img class="guidearrow"src="img/arrow41-007.gif" />
+			<div class="guide off">入力内容の確認</div>
+			<img class="guidearrow"src="img/arrow41-007.gif" />
+			<div class="guide off">入力完了</div>
+
+			<div class="clear"></div>
+			<span class="must">※</span>は必須項目です。
+			<form method="post" action="/contact/confirmation" method="post">
+				<table class="contactform">
+					<tr>
+						<th class="item">生徒氏名<span class="must">※</span></td>
+						<td class="write">
+							姓：<input type="text" name="lastname" size="10" />
+							名：<input type="text" name="firstname" size="10" />
+						</td>
+					</tr>
+					<tr>
+						<th class="item">生徒氏名（フリガナ）<span class="must">※</span></td>
+						<td class="write">
+							セイ：<input type="text" name="sai" size="10" />（全角カナ）
+							メイ：<input type="text" name="mai" size="10" />（全角カナ）
+						</td>
+					</tr>
+					<tr>
+						<th class="item">学校区分</td>
+						<td class="write">
+							<select name="school_category">
+								<option value=""></option>
+								<option value="私立">私立</option>
+								<option value="国立">国立</option>
+								<option value="都立">都立</option>
+								<option value="県立">県立</option>
+								<option value="府立">府立</option>
+								<option value="道立">道立</option>
+								<option value="区立">区立</option>
+								<option value="市立">市立</option>
+								<option value="その他">その他</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th class="item">在籍・出身校<span class="must">※</span></td>
+						<td class="write">
+							<input type="text" name="school_name" size="80" />
+						</td>
+					</tr>
+					<tr>
+						<th class="item">学年<span class="must">※</span></td>
+						<td class="write">
+							<select name="grade">
+								<option value=""></option>
+								<option value="小1">小1</option>
+								<option value="小2">小2</option>
+								<option value="小3">小3</option>
+								<option value="小4">小4</option>
+								<option value="小5">小5</option>
+								<option value="小6">小6</option>
+								<option value="中1">中1</option>
+								<option value="中2">中2</option>
+								<option value="中3">中3</option>
+								<option value="高1">高1</option>
+								<option value="高2">高2</option>
+								<option value="高3">高3</option>
+								<option value="卒業">卒業</option>
+								<option value="中退">中退</option>
+								<option value="その他">その他</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th class="item">住所</td>
+						<td class="write">
+							<div class="address">〒<input type="text" name="postal_code" size="20" /></div>
+							<div class="address"><input type="text" name="address" size="80" /></div>
+						</td>
+					</tr>
+					<tr>
+						<th class="item">電話番号<span class="must">※</span></td>
+						<td class="write">
+							<input type="text" name="tel" size="30" />
+						</td>
+					</tr>
+					<tr>
+						<th class="item">E-mail<span class="must">※</span></td>
+						<td class="write">
+							<input type="text" name="mail" size="80" />
+						</td>
+					<tr>
+						<th class="item">志望校（学部）</td>
+						<td class="write">
+							<input type="text" name="goal" size="80" />
+						</td>
+					</tr>
+					<tr>
+						<th class="item">お問い合せ者<span class="must">※</span></td>
+						<td class="write">
+							<select name="terms">
+								<option value=""></option>
+								<option value="本人">本人</option>
+								<option value="母親">母親</option>
+								<option value="父親">父親</option>
+								<option value="兄弟姉妹">兄弟姉妹</option>
+								<option value="その他">その他</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th class="item">お問い合せ内容<span class="must">※</span></td>
+						<td class="write">
+							<select name="inquiry">
+								<option value=""></option>
+								<option value="学習スタイル">学習スタイル</option>
+								<option value="学習相談">学習相談</option>
+								<option value="進路相談">進路相談</option>
+								<option value="合格実績">合格実績</option>
+								<option value="コース、学費等">コース、学費等</option>
+								<option value="その他">その他</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th class="item">現在抱えている課題<span class="must">※</span></td>
+						<td class="write">
+							<select name="problem">
+								<option value=""></option>
+								<option value="志望大学・学部合格のための学力が不足している">志望大学・学部合格のための学力が不足している</option>
+								<option value="志望大学・学部が決まらない">志望大学・学部が決まらない</option>
+								<option value="勉強方法がわからない">勉強方法がわからない</option>
+								<option value="苦手科目を克服できない">苦手科目を克服できない</option>
+								<option value="学校の勉強についていけない">学校の勉強についていけない</option>
+								<option value="現在通っている塾・予備校に不満がある">現在通っている塾・予備校に不満がある</option>
+								<option value="その他">その他</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th class="item">得意科目・不得意科目<span class="must">※</span></td>
+						<td class="write">
+							<input type="text" name="strong_weakness" size="80" />
+						</td>
+					</tr>
+					<tr>
+						<th class="item">ご連絡の際、都合の良い曜日・時間帯があればご記入ください。</td>
+						<td class="write">
+							<div class="contact_hours"><input type="text" name="contact_hours" size="80" /></div>
+							<div class="contact_hours">夕方以降の時間帯は生徒指導をしていることがありますので、ご都合が許せば早い時間帯をご指定ください。平日土日は問いません。</div>
+						</td>
+					</tr>
+					<tr>
+						<th class="item">どのように『T-cial』を知りましたか？<span class="must">※</span></td>
+						<td class="write">
+							<select name="how_know">
+								<option value=""></option>
+								<option value="現在通塾している生徒・父母からの紹介">現在通塾している生徒・父母からの紹介</option>
+								<option value="過去に通塾していた卒業生・父母からの紹介">過去に通塾していた卒業生・父母からの紹介</option>
+								<option value="学校の先生からの紹介">学校の先生からの紹介</option>
+								<option value="ホームページ">ホームページ</option>
+								<option value="その他">その他</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th class="item">お問い合せ内容、相談内容など、ご自由にお書きください。</td>
+						<td class="write">
+							<textarea name="content" cols=60 rows=15></textarea>
+						</td>
+					</tr>
+				</table>
+				<div class="confirm"><input type="submit" name="submit" value="入力内容を確認する" class="confirm"/></div>
+			</form>
+				</table>
+		<div class="clear"></div>
+		</div>
+
+	</div>
+
+	<div id="footer">
+		<div class="container">
+			<div class="fblikebox">
+				<div id="fb-root"></div>
+				<script src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php" type="text/javascript"></script>
+				<script type="text/javascript">FB.init("37d123d702080f94fb4b5117187db439");</script>
+				<fb:fan profile_id="391555060914397" connections="10" width="357" height="200" css="../css/front/beforelogin/style.css" ></fb:fan>
+			</div>
+			<ul class="footer">
+				<li>
+					<a href="/contact" title="問い合わせフォームへ">授業・面談のお申込み</a>
+				</li>
+				<li>
+					<a href="mailto:user@t-cial.com">お問い合わせ（メール）</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/T_cial" title="T-cialのつぶやきを見る" target="blank">Twitter</a><br>
+					<a href="http://www.facebook.com/tcialcom" title="T-cialのFacebookページを見る" target="blank">Facebook</a><br>
+				</li>
+			</ul>
+			<div class="clear"></div>
+			<div class="copyrights">
+				(c) T-cial 2012
+			</div>
+		</div>
+	</div>
+</body>
+</html>

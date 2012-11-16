@@ -1,0 +1,244 @@
+<#parse("/WEB-INF/template/layout/head.vm");
+
+#[[
+		<!-- datepicker -->
+		<script>
+		    $(function() {
+		        $( "#datepicker" ).datepicker();
+		        $( "#anim" ).change(function() {
+		            $( "#datepicker" ).datepicker( "option", "showAnim", $( this ).val() );
+		        });
+		        $( "#date-edit" ).datepicker();
+		        $( "#anim" ).change(function() {
+		            $( "#datepicker" ).datepicker( "option", "showAnim", $( this ).val() );
+		        });
+		    });
+		 </script>
+
+		<!-- timepicker -->
+		 <script>
+		 	$(function() {
+		 		$('#start').timepicker({
+					'minTime': '9:00am',
+					'maxTime': '11:00pm'
+				});
+		 		$("#end").timepicker({
+					'minTime': '10:00am',
+					'maxTime': '0:00am'
+				});
+		 		$('#start-edit').timepicker({
+					'minTime': '9:00am',
+					'maxTime': '11:00pm'
+				});
+		 		$("#end-edit").timepicker({
+					'minTime': '10:00am',
+					'maxTime': '0:00am'
+				});
+
+		 	});
+		 </script>
+
+		 <script>
+		 	$(function() {
+		 		$('#section_3').hide();
+		 	});
+		 </script>
+	]]#
+
+	</head>
+	<body>
+	#parse("/WEB-INF/template/layout/topbar.vm");
+
+		<section id="body">
+			<div class="wrapper">
+				<article class="column_1">
+					<section id="mini-menu">
+						<form id="select-by-student">
+							<select class="input-medium">
+								<option>すべての生徒</option>
+								<option>由柚</option>
+								<option>中根 純</option>
+								<option>笹本 伊吹</option>
+								<option>佐藤 竣亮</option>
+							</select>
+						</form>
+
+						<form id="select-by-teacher">
+							<select class="input-medium">
+								<option>あなたの授業</option>
+								<option>すべての先生</option>
+								<option>桜井啓太</option>
+								<option>深川道陽</option>
+							</select>
+						</form>
+					</section>
+
+					<div class="tabs">
+						<ul class="nav nav-tabs">
+						    <li><a href="schedule">予定</a></li>
+							<li class="active"><a href="#">レポート</a></li>
+							<li><a href="note">ノート</a></li>
+							<li><a href="homework">宿題</a></li>
+						</ul>
+					</div>
+
+					<article class="report">
+						<section class="lesson-header">
+							<a href=""><img src="../img/user/6.png" class="pic-s" /><span class="lessonn-header-name">由柚</span></a><span class="suffix">のレポート</span><span class="last-update">last updated:12/1</span>
+						</section>
+						<div class="component">
+							<a class="writer" href="../user/user"><img src="../img/user/1.png" class="pic-min" /><span class="partner-name">坂本 諒</span></a>
+							<form>
+								<div id="datetimepicker">
+									<input type="text" id="datepicker" class="input-small datepicker" value="11/27/2012" />
+
+									<input type="text" id="start" class="input-small start" value="8:00pm" />～
+
+									<input type="text" id="end" class="input-small"  value="9:30pm"  />
+								</div>
+
+								<div class="subjects">
+									<select id="select-subject" class="input-small">
+										<option>科目を選択</option>
+										<option selected="selected">数学</option>
+										<option>英語</option>
+										<option>国語</option>
+										<option>理科</option>
+										<option>社会</option>
+										<option>その他</option>
+									</select>
+
+									<select id="select-subject" class="input-small">
+										<option>科目を選択</option>
+										<option>数学</option>
+										<option>英語</option>
+										<option>国語</option>
+										<option>理科</option>
+										<option>社会</option>
+										<option>その他</option>
+									</select>
+								</div>
+
+								<div class="sections">
+									<input type="text" id="section_!" class="input-small section" value="二次関数" />
+
+									<input type="text" id="section_2" class="input-small section" placeholder="単元を記入" />
+
+									<input type="text" id="section_3" class="input-small section" placeholder="単元を記入" />
+								</div>
+								<textarea class="input-xlarge report-textarea" placeholder="レポートを記入" ></textarea>
+								<div class="btns">
+									<input type="submit" class="write-btn" value="記入" />
+									<input type="submit" class="delete-btn" value="削除" />
+								</div>
+							</form>
+						</div>
+					</article>
+
+					<div class="divider"></div>
+
+					<article class="report">
+						<section class="lesson-header">
+							<a href=""><img src="../img/user/8.png" class="pic-s" /><span class="lessonn-header-name">佐藤 竣亮</span></a><span class="suffix">のレポート</span><span class="last-update">last updated:12/1</span>
+						</section>
+						<div class="component">
+							<a class="writer" href=""><img src="../img/user/5.png" class="pic-min" /><span class="partner-name">深川 道陽</span></a>
+							<form>
+								<div id="datetimepicker">
+									<input type="text" id="datepicker" class="input-small datepicker" value="11/25/2012"  disabled="disabled" />
+
+									<input type="text" id="start" class="input-small start" value="6:00pm" disabled="disabled" />～
+
+									<input type="text" id="end" class="input-small"  value="7:30pm"  disabled="disabled"/>
+								</div>
+
+								<div class="subjects">
+									<select id="select-subject" class="input-small" disabled="disabled">
+										<option>科目を選択</option>
+										<option selected="selected">数学</option>
+										<option>英語</option>
+										<option>国語</option>
+										<option>理科</option>
+										<option>社会</option>
+										<option>その他</option>
+									</select>
+
+									<select id="select-subject" class="input-small" disabled="disabled">
+										<option>科目を選択</option>
+										<option>数学</option>
+										<option>英語</option>
+										<option>国語</option>
+										<option>理科</option>
+										<option>社会</option>
+										<option>その他</option>
+									</select>
+
+								</div>
+
+								<div class="sections">
+									<input type="text" id="section_1" class="input-small section" value="一次方程式" disabled="disabled" />
+
+									<input type="text" id="section_2" class="input-small section" placeholder="単元を記入" disabled="disabled" />
+
+									<input type="text" id="section_3" class="input-small section" placeholder="単元を記入" disabled="disabled" />
+								</div>
+								<textarea class="input-xlarge report-textarea" placeholder="レポートを記入" disabled="disabled"></textarea>
+								<div class="btns">
+									<input type="submit" class="write-btn" value="記入" />
+									<input type="submit" class="delete-btn" value="削除" />
+								</div>
+							</form>
+						</div>
+					</article>
+
+					<div class="divider"></div>
+
+					<article class="report">
+						<section class="lesson-header">
+							<a href=""><img src="../img/user/6.png" class="pic-s" /><span class="lessonn-header-name">由柚</span></a><span class="suffix">のレポート</span><span class="last-update">last updated:12/1</span>
+						</section>
+						<div class="component">
+							<a class="writer" href=""><img src="../img/user/4.png" class="pic-min" /><span class="partner-name">桜井 啓太</span></a>
+							<span class="report-inf">
+								<span class="date" id="editable-date">2012年11月15日</span>
+								<span class="start" id="editable-start">22:00</span>
+								<span id="">-</span>
+								<span class="end" id="editable-end">23:30</span>
+							</span>
+							<div class="subjects"><span class="english">英語</span><span class="other">不定詞</span></div>
+							<p class="content-body">・関係代名詞の一覧表（who・whichなど）を覚えていなかったので、関係代名詞は一応基礎からやり直しました。一方、関係副詞の方は理解がある程度あったので、比較的よく出来ていました。全体的には、これまで独習でやってきた割りには問題なかったと思います。 ・この調子で、まずはリードAを最後までやり切ることが目標となります。</p>
+							<div class="btns">
+								<button class="open-btn">全て見る</button>
+							</div>
+						</div>
+					</article>
+
+					<div class="divider"></div>
+
+					<article class="report">
+						<section class="lesson-header">
+							<a href=""><img src="../img/user/6.png" class="pic-s" /><span class="lessonn-header-name">由柚</span></a><span class="suffix">のレポート</span><span class="last-update">last updated:12/1</span>
+						</section>
+						<div class="component">
+							<a class="writer" href="../user/user"><img src="../img/user/1.png" class="pic-min" /><span class="partner-name">坂本 諒</span></a>
+							<div class="btns">
+								<button class="open-btn">全て見る</button>
+							</div>
+							<span class="report-inf">
+								<span class="date" id="editable-date">2012年11月11日</span>
+								<span class="start" id="editable-start">22:00</span>
+								<span id="">-</span>
+								<span class="end" id="editable-end">23:30</span>
+							</span>
+							<div class="subjects"><span class="math">数学</span><span class="other">二次関数</span></div>
+							<p class="content-body">文章題はまず問題の状況を整理しイメージすることが大事です。時系列に沿って状況がどう変化していくのかを自分で描くようにするといいです。状況を理解し言葉で説明することができれば自然と式が作れると思います。道の問題ではとてもわかりやすく説明できていました。goodです。</p>
+						</div>
+					</article>
+				</article>
+
+#parse("/WEB-INF/template/layout/right.vm")
+			</div>
+		</section>
+#parse("/WEB-INF/template/layout/footer.vm")
+	</body>
+</html>

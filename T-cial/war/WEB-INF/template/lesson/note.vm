@@ -1,0 +1,187 @@
+#parse("/WEB-INF/template/layout/head.vm")
+
+	</head>
+	<body>
+#parse("/WEB-INF/template/layout/topbar.vm")
+
+		<section id="body">
+			<div class="wrapper">
+				<article class="column_1">
+					<section id="mini-menu">
+						<form id="select-by-student">
+							<select class="input-medium">
+								<option>すべての生徒</option>
+								<option>由柚</option>
+								<option>中根 純</option>
+								<option>笹本 伊吹</option>
+								<option>佐藤 竣亮</option>
+							</select>
+						</form>
+
+						<form id="select-by-teacher">
+							<select class="input-medium">
+								<option>あなたの授業</option>
+								<option>すべての先生</option>
+								<option>桜井啓太</option>
+								<option>深川道陽</option>
+							</select>
+						</form>
+					</section>
+
+					<div class="tabs">
+
+						<ul class="nav nav-tabs">
+						    <li><a href="schedule">予定</a></li>
+							<li><a href="report">レポート</a></li>
+							<li class="active"><a href="#">ノート</a></li>
+							<li><a href="homework">宿題</a></li>
+						</ul>
+					</div>
+
+					<article class="report">
+						<section class="lesson-header">
+							<a href=""><img src="../img/user/6.png" class="pic-s" /><span class="lessonn-header-name">由柚</span></a><span class="suffix">のノート</span><span class="last-update">last updated:12/1</span>
+						</section>
+						<div class="component">
+							<section class="write">
+								<form>
+									<textarea class="input-xlarge" placeholder="ノートを記入"></textarea>
+									<div class="btns">
+										<input type="submit" class="write-btn" value="記入" />
+									</div>
+								</form>
+							</section>
+
+							<div class="divider"></div>
+
+							<section class="note">
+								<a class="writer" href="../user/user"><img src="../img/user/1.png" class="pic-min" /><span class="partner-name">坂本 諒</span></a>
+
+								<section class="note-body">
+									<p>【実力テスト範囲】英語 ・中1〜2の全範囲 ・中3のプログラム3まで。</p>
+									<span class="note-date">2012年12月1日</span>
+								</section>
+
+								<section class="note-body">
+									<p>1. 横浜国立大学　経済学部　経済  2. 慶応義塾大学　商学部  3. 立教大学　経済学部  4. 立教大学　経営学部  5. 中央大学　経済学部　経済  6. 日本大学　経済学部</p>
+									<span class="note-date">2012年11月22日</span>
+								</section>
+
+								<section class="note-body">
+									<p >駿台ベネッセマーク模試：英語8割は越えた  ⅠA：5〜6割  ⅡB：あんまり良くなかった  化学：5〜6割</p>
+									<span class="note-date">2012年11月22日</span>
+								</section>
+
+								<section class="note-body">
+									<p>p92,p93の正答率2/3</p>
+									<span class="note-date">2012年11月22日</span>
+								</section>
+
+								<section class="note-body">
+									<p>反比例復習の必要あり。でもテスト後かな。 学校のワーク等の課題数学p18~p26今p21まで終わっとる6p,英語12p→２週した</p>
+									<span class="note-date">2012年11月22日</span>
+								</section>
+
+								<div class="more"><a>さらに表示</a></div>
+
+							</section>
+
+
+							<div class="divider"></div>
+
+							<section class="note">
+								<a class="writer" href=""><img src="../img/user/4.png" class="pic-min" /><span class="partner-name">桜井 啓太</span></a>
+
+								<section class="note-body">
+									<p>・Crownの暗記→暗記  ・ユメタン→暗記  ・サイドリーダー  ・英文法  ・構文→暗記    来週  ・比較  ・暗記テスト  ・Crownのまとめ</p>
+									<span class="note-date">2012年11月22日</span>
+								</section>
+
+								<section class="note-body">
+									<p>3日目：22/35 4日目：24/35 中間テスト範囲 1. 数学：教科書p62-121 2. 英語：p26-59 Program3-5＋Speaking4/p38-41は除く 体育大会の英作文（授業で習った形式） 3. 社会：p64-91 1. 国語：p62-66、p.92-107 2. 理科：p72-115</p>
+									<span class="note-date">2012年11月22日</span>
+								</section>
+								<div class="more"><a>さらに表示</a></div>
+							</section>
+						</div>
+					</article>
+
+					<div class="divider"></div>
+
+					<article class="report">
+						<section class="lesson-header">
+							<a href=""><img src="../img/user/8.png" class="pic-s" /><span class="lessonn-header-name">佐藤 竣亮</span></a><span class="suffix">のノート</span><span class="last-update">last updated:12/1</span>
+						</section>
+
+						<div class="component">
+							<section class="write">
+								<form>
+									<textarea class="input-xlarge" placeholder="ノートを記入"></textarea>
+									<div class="btns">
+										<input type="submit" class="write-btn" value="記入" />
+									</div>
+								</form>
+							</section>
+
+							<div class="divider"></div>
+
+							<section class="note">
+								<a class="writer" href=""><img src="../img/user/5.png" class="pic-min" /><span class="partner-name">深川 道陽</span></a>
+
+								<section class="note-body">
+									<p>【実力テスト範囲】英語 ・中1〜2の全範囲 ・中3のプログラム3まで。</p>
+									<span class="note-inf">2012年12月1日</span>
+								</section>
+
+								<section class="note-body">
+									<p>1. 横浜国立大学　経済学部　経済  2. 慶応義塾大学　商学部  3. 立教大学　経済学部  4. 立教大学　経営学部  5. 中央大学　経済学部　経済  6. 日本大学　経済学部</p>
+									<span class="note-date">2012年11月22日</span>
+								</section>
+
+								<section class="note-body">
+									<p>駿台ベネッセマーク模試：英語8割は越えた  ⅠA：5〜6割  ⅡB：あんまり良くなかった  化学：5〜6割</p>
+									<span class="note-date">2012年11月22日</span>
+								</section>
+
+								<section class="note-body">
+									<p>p92,p93の正答率2/3</p>
+									<span class="note-date">2012年11月22日</span>
+								</section>
+
+								<section class="note-body">
+									<p>反比例復習の必要あり。でもテスト後かな。 学校のワーク等の課題数学p18~p26今p21まで終わっとる6p,英語12p→２週した</p>
+									<span class="note-date">2012年11月22日</span>
+								</section>
+
+								<div class="more"><a>さらに表示</a></div>
+
+							</section>
+
+							<div class="divider"></div>
+
+							<section class="note">
+								<a class="writer" href=""><img src="../img/user/4.png" class="pic-min" /><span class="partner-name">桜井 啓太</span></a>
+
+								<section class="note-body">
+									<p>・Crownの暗記→暗記  ・ユメタン→暗記  ・サイドリーダー  ・英文法  ・構文→暗記    来週  ・比較  ・暗記テスト  ・Crownのまとめ</p>
+									<span class="note-inf">2012年11月22日</span>
+								</section>
+
+								<section class="note-body">
+									<p>3日目：22/35 4日目：24/35 中間テスト範囲 1. 数学：教科書p62-121 2. 英語：p26-59 Program3-5＋Speaking4/p38-41は除く 体育大会の英作文（授業で習った形式） 3. 社会：p64-91 1. 国語：p62-66、p.92-107 2. 理科：p72-115</p>
+									<span class="note-inf">2012年11月22日</span>
+								</section>
+
+								<div class="more"><a>さらに表示</a></div>
+							</section>
+						</div>
+					</article>
+
+				</article>
+
+#parse("/WEB-INF/template/layout/right.vm")
+			</div>
+		</section>
+#parse("/WEB-INF/template/layout/footer.vm")
+	</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="description" content="カフェ" />
+<meta name="keywords" content="" />
+
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.masonry.min.js"></script>
+
+#[[
+<script>
+$(function(){
+ 	var $container = $('#container');
+
+	$container.imagesLoaded( function(){
+		$container.masonry({
+			itemSelector : '.item',
+			isAnimated : true
+		});
+	});
+});
+</script>
+]]#
+
+<title>OneDayCafe-admin</title>
+
+<!--[if lt IE 7]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE7.js" type="text/javascript"></script>
+<![endif]-->
+</head>
+<body>
+	<article class="wrapper">
+		<div id="header">
+			<h1 id="siteId"><a href="#">OneDayCafe</a></h1>
+			<ul id="nav">
+				<p>いつこのサイトオープンしよっか？</p>
+			</ul>
+		</div>
+
+		<div id="container">
+			<form action="$uploadUrl" method="post" enctype="multipart/form-data">
+			    <input type="file" name="upload">
+			    <input type="submit" value="Submit">
+			</form>
+			#foreach($menu in $menuList)
+			<div class="item">
+				<div class="fig">
+					<a href="/admin/Edit?menu=$menu.getId()"><img src="$menu.getServingUrl(400)" class="photo" /></a>
+					<p>$menu.getTitle()</p>
+					<p>$menu.getRecipe()</p>
+				</div>
+				<div class="commentArea"><span class="status">$menu.getPoint() Votes</span><span class="status">　$menu.getCommentCounter() Comments</span></div>
+				#foreach($comment in $commentList)
+					#if($comment.getMenuId()==$menu.getId())
+					<div class="commentArea">
+						<a class="imgLink"><img src="https://graph.facebook.com/$comment.getFacebookId()/picture" class="userIcon" /></a>
+						<p class="commentBox">コメントを表示</p>
+					</div>
+					#end
+				#end
+			</div>
+			#end
+
+		</div>
+	</article>
+</body>
+</html>

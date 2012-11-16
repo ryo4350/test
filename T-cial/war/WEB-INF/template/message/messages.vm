@@ -1,0 +1,105 @@
+#parse("/WEB-INF/template/layout/head.vm")
+	</head>
+	<body>
+#parse("/WEB-INF/template/layout/topbar.vm")
+
+		<section id="body">
+			<div class="wrapper">
+				<article class="column_1">
+					<header>
+						<h2 class="setting-header">メッセージ一覧</h2>
+					</header>
+
+					<div class="divider"></div>
+
+					<article class="report">
+
+						<section class="lesson-header">
+							<a href="user"><img src="../img/user/6.png" class="pic-s" /><span class="lessonn-header-name">由柚</span></a><span class="suffix">とのメッセージ</span>
+						</section>
+						<div class="component">
+							<section class="message">
+								<a class="writer" href="user.htm"><img src="../img/user/1.png" class="pic-min" /><span class="partner-name">坂本 諒</span></a><span class="note-date">2012年12月1日</span>
+								<section class="message-body">
+									<p><a href="message">【実力テスト範囲】英語 ・中1〜2の全範囲 ・中3のプログラム3まで。</a></p>
+								</section>
+							</section>
+						</div>
+					</article>
+
+					<div class="divider"></div>
+
+					<article class="report">
+						<section class="lesson-header">
+							<a href="user"><img src="../img/user/8.png" class="pic-s" /><span class="lessonn-header-name">佐藤 竣亮</span></a><span class="suffix">とのメッセージ</span>
+						</section>
+						<div class="component">
+
+							<section class="message">
+								<a class="writer" href="user.htm"><img src="../img/user/1.png" class="pic-min" /><span class="partner-name">坂本 諒</span></a><span class="note-date">2012年12月1日</span>
+								<section class="message-body">
+									<p>【実力テスト範囲】英語 ・中1〜2の全範囲 ・中3のプログラム3まで。</p>
+								</section>
+							</section>
+						</div>
+					</article>
+
+					<div class="divider"></div>
+
+					<article class="report">
+						<section class="lesson-header">
+							<a href="user"><img src="../img/user/5.png" class="pic-s" /><span class="lessonn-header-name">深川 道陽</span></a><span class="suffix">とのメッセージ</span>
+						</section>
+						<div class="component">
+
+							<section class="message">
+								<a class="writer" href="user.htm"><img src="../img/user/1.png" class="pic-min" /><span class="partner-name">坂本 諒</span></a><span class="note-date">2012年12月1日</span>
+								<section class="message-body">
+									<p>【実力テスト範囲】英語 ・中1〜2の全範囲 ・中3のプログラム3まで。</p>
+								</section>
+							</section>
+						</div>
+					</article>
+
+					<div class="divider"></div>
+
+					<article class="report">
+						<section class="lesson-header">
+							<a href="user"><img src="../img/user/4.png" class="pic-s" /><span class="lessonn-header-name">桜井 啓太</span></a><span class="suffix">とのメッセージ</span>
+						</section>
+						<div class="component">
+
+							<section class="message">
+								<a class="writer" href="user.htm"><img src="../img/user/1.png" class="pic-min" /><span class="partner-name">坂本 諒</span></a><span class="note-date">2012年12月1日</span>
+								<section class="message-body">
+									<p>【実力テスト範囲】英語 ・中1〜2の全範囲 ・中3のプログラム3まで。</p>
+								</section>
+							</section>
+						</div>
+					</article>
+
+					<div class="divider"></div>
+
+					<article class="report">
+						<section class="lesson-header">
+							<a href="user"><img src="../img/user/9.png" class="pic-s" /><span class="lessonn-header-name">岩本 大輝</span></a><span class="suffix">とのメッセージ</span>
+						</section>
+						<div class="component">
+
+							<section class="message">
+								<a class="writer" href="user.htm"><img src="../img/user/1.png" class="pic-min" /><span class="partner-name">坂本 諒</span></a><span class="note-date">2012年12月1日</span>
+								<section class="message-body">
+									<p>【実力テスト範囲】英語 ・中1〜2の全範囲 ・中3のプログラム3まで。</p>
+								</section>
+							</section>
+						</div>
+					</article>
+				</article>
+
+				</article>
+#parse("/WEB-INF/template/layout/right.vm")
+			</div>
+		</section>
+#parse("/WEB-INF/template/layout/footer.vm")
+	</body>
+</html>

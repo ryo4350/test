@@ -1,0 +1,34 @@
+				<aside class="column_2">
+					<h3 class="aside-header">おススメの先生</h3>
+					<div class="divider"></div>
+					<section class="person-li">
+						<ul>
+							<li>
+								<a href="../user.htm"><img src="../img/user/11.png" class="pic-ss" /><span class="person-li-name">鈴木 啓佑</span></a>
+								<span class="note-date">2012年12月1日</span>
+								<span class="aside-inf"><span class="en-min">英語</span><span class="society-min">社会</span><span class="aside-icon"><img src="../img/star.png"></span><span class="aside-count">10</span></span>
+							</li>
+							<div class="divider"></div>
+							<li>
+								<a href="../user.htm"><img src="../img/user/10.png" class="pic-ss" /><span class="person-li-name">富田 まどか</span></a>
+								<span class="note-date">2012年11月24日</span>
+								<span class="aside-inf"><span class="ja-min">国語</span><span class="aside-icon"><img src="../img/star.png"></span><span class="aside-count">102</span></span>
+							</li>
+							<div class="divider"></div>
+							<li>
+								<a href="../user.htm"><img src="../img/user/5.png" class="pic-ss" /><span class="person-li-name">深川 道陽</span></a>
+								<span class="note-date">2012年2月1日</span>
+								<span class="aside-inf"><span class="math-min">数学</span><span class="science-min">理科</span><span class="aside-icon"><img src="../img/star.png"></span><span class="aside-count">50</span></span>
+							</li>
+							<div class="divider"></div>
+							<li>
+								<a href="../user.htm"><img src="../img/user/4.png" class="pic-ss" /><span class="person-li-name">桜井 啓太</span></a>
+								<span class="note-date">2012年12月12日</span>
+								<span class="aside-inf"><span class="en-min">英語</span><span class="aside-icon"><img src="../img/star.png"></span><span class="aside-count">13</span></span>
+							</li>
+						</ul>
+					</section>
+					<section class="advertise">
+						<img src="img/ad/ad_1.jpg" alt="advertise" />
+					</section>
+				</aside>

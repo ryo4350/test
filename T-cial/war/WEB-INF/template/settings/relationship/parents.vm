@@ -1,0 +1,29 @@
+#parse("/WEB-INF/template/layout/head.vm")
+	</head>
+	<body>
+#parse("/WEB-INF/template/layout/topbar.vm")
+
+		<section id="body">
+			<div class="wrapper">
+#parse("/WEB-INF/template/layout/left.vm")
+
+				<article class="column_1">
+					<header>
+						<h2 class="setting-header">つながり</h2>
+						<div class="tabs">
+							<ul class="nav nav-tabs">
+							    <li><a href="teachers">先生</a></li>
+								<li><a href="students">生徒</a></li>
+								<li class="active"><a href="">保護者</a></li>
+							</ul>
+						</div>
+					</header>
+					<section class="">
+
+					</section>
+				</article>
+			</div>
+		</section>
+#parse("/WEB-INF/template/layout/footer.vm")
+	</body>
+</html>

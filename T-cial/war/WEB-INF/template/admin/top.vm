@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="description" content="カフェ" />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="one-day-cafe" />
+<meta property="og:type" content="cafe" />
+<meta property="og:url" content="http://one-day-cafe.appspot.com/top" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content="one-day-cafe" />
+<meta property="fb:app_id" content="255538524567371" />
+
+
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<link rel="stylesheet" type="text/css" href="../css/jquery.lightbox-0.5.css" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.masonry.min.js"></script>
+<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+
+#[[
+<script>
+$(function(){
+ 	var $container = $('#container');
+
+	$container.imagesLoaded( function(){
+		$container.masonry({
+			itemSelector : '.item',
+			isAnimated : true
+		});
+	});
+});
+</script>
+
+<script type="text/javascript">
+$(function() {
+	$('.fig a').lightBox({fixedNavigation:true});
+});
+</script>
+
+<script type="text/javascript">
+$(function(){
+	$("#about").hide();
+	$("#staff").hide();
+	$("#collabo").hide();
+	$("#navMenu").click(function(){
+		if($("#menus").css("display")=="none"){
+			$("#menus").fadeIn();
+			$("#about").hide();
+			$("#staff").hide();
+			$("#collabo").hide();
+		}
+	});
+
+	$("#navAbout").click(function(){
+		if($("#about").css("display")=="none"){
+			$("#about").fadeIn();
+			$("#menus").hide();
+			$("#staff").hide();
+			$("#collabo").hide();
+		}
+	});
+
+	$("#navStaff").click(function(){
+		if($("#staff").css("display")=="none"){
+			$("#staff").fadeIn();
+			$("#menus").hide();
+			$("#about").hide();
+			$("#collabo").hide();
+		}
+	});
+
+	$("#navCollabo").click(function(){
+		if($("#collabo").css("display")=="none"){
+			$("#collabo").fadeIn();
+			$("#menus").hide();
+			$("#about").hide();
+			$("#staff").hide();
+		}
+	});
+
+});
+</script>
+
+<script>
+$(function(){
+	$("#menuMenu").mouseover(function(){
+		$("#menuThumbnail").attr("src", "img/menu.png");
+	});
+
+	$("#food").mouseover(function(){
+		$("#menuThumbnail").attr("src", "img/8.png");
+	});
+
+	$("#desert").mouseover(function(){
+		$("#menuThumbnail").attr("src", "img/12.jpg");
+	});
+
+	$("#drink").mouseover(function(){
+		$("#menuThumbnail").attr("src", "img/7.png");
+	});
+
+	$("#staffMenu").mouseover(function(){
+		$("#staffThumbnail").attr("src", "img/15.png");
+	});
+
+	$("#hifumi").mouseover(function(){
+		$("#staffThumbnail").attr("src", "img/9.jpg");
+	});
+
+	$("#haruka").mouseover(function(){
+		$("#staffThumbnail").attr("src", "img/11.jpg");
+	});
+
+	$("#yu").mouseover(function(){
+		$("#staffThumbnail").attr("src", "img/14.png");
+	});
+
+	$("#yuki").mouseover(function(){
+		$("#staffThumbnail").attr("src", "img/10.png");
+	});
+
+	$("#ayaka").mouseover(function(){
+		$("#staffThumbnail").attr("src", "img10.png");
+	});
+
+	$("#n").mouseover(function(){
+		$("#collaborateThumbnail").attr("src", "img/N.png");
+	});
+
+	$("#88").mouseover(function(){
+		$("#collaborateThumbnail").attr("src", "img/88+.png");
+	});
+
+	$("#T-cial").mouseover(function(){
+		$("#collaborateThumbnail").attr("src", "img/T-cial.png");
+	});
+});
+</script>
+
+]]#
+
+<title>OneDayCafe</title>
+
+<!--[if lt IE 7]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE7.js" type="text/javascript"></script>
+<![endif]-->
+
+</head>
+<body>
+	<header id="header">
+		<h1 class="title">N's Cafe</h1>
+		<ul id="nav">
+			<li>気になる料理に投票しよう！</li>
+			#if(!$user)
+				<li id="login"><a href="/sns/OAuthFacebook"><img src="/img/facebooklogin.jpg"></a></li>
+			#end
+
+			#if($user)
+				#if($user.getReservation() != 0)
+					<button class="submitBtn">あなたは$user.getReservation()時～予約済みです。</button>
+					<a href="/front/Reserve?user=$user.getFacebookId()&when=0"><button class="submitBtn">キャンセルはこちら</button></a>
+				#end
+				#if($user.getReservation() == 0)
+					<button class="submitBtn">予約するとドリンク１杯サービス！（クリックすると日時にジャンプようにしたいけどやり方わかんないからあとよろしく！）</button>
+				#end
+			#end
+
+			#if($hasVote)
+				<li id="message"><p>あなたは残り、$user.getVoteCounter()回投票できます。</p></li>
+			#end
+		</ul>
+		<ul id="sdt_menu" class="sdt_menu">
+			<li id="navAbout">
+				<a href="#">
+					<img src="img/13.png" alt=""/>
+					<span class="sdt_active"></span>
+					<span class="sdt_wrap">
+						<span class="sdt_link">N's Cafe</span>
+						<span class="sdt_descr">Get to know N's Cafe</span>
+					</span>
+				</a>
+				<div class="sdt_box">
+						<a href="#">N's Cafe is ...</a>
+						<a href="#">Date</a>
+						<a href="#">Access</a>
+				</div>
+			</li>
+			<li id="navMenu">
+				<a href="#" id="menuMenu">
+					<img id="menuThumbnail" src="img/menu.png" alt=""/>
+					<span class="sdt_active"></span>
+					<span class="sdt_wrap">
+						<span class="sdt_link">Menu</span>
+						<span class="sdt_descr">Vote your favorite !!</span>
+					</span>
+				</a>
+				<div class="sdt_box">
+						<a href="#" id="food">Food</a>
+						<a href="#" id="desert">Desert</a>
+						<a href="#" id="drink">Drink</a>
+				</div>
+			</li>
+			<li id="navStaff">
+				<a href="#" id="staffMenu">
+					<img id="staffThumbnail" src="img/15.png" alt=""/>
+					<span class="sdt_active"></span>
+					<span class="sdt_wrap">
+						<span class="sdt_link">Staff</span>
+						<span class="sdt_descr">We make you welcome!</span>
+					</span>
+				</a>
+				<div class="sdt_box">
+						<a href="#" id="hifumi">鹿島　日布美</a>
+						<a href="#" id="haruka">片元　遥香</a>
+						<a href="#" id="yu">長澤　優</a>
+						<a href="#" id="yuki">氏家　由貴</a>
+						<a href="#" id="ayaka">水野 文翔</a>
+				</div>
+			</li>
+			<li id="navCollabo">
+				<a href="#">
+					<img id="collaborateThumbnail" src="img/N.png" alt=""/>
+					<span class="sdt_active"></span>
+					<span class="sdt_wrap">
+						<span class="sdt_link">Collabo</span>
+						<span class="sdt_descr">We are promoting it!!</span>
+					</span>
+				</a>
+				<div class="sdt_box">
+						<a href="#" id="n">【N】</a>
+						<a href="#" id="88">88+</a>
+						<a href="#" id="T-cial">T-cial</a>
+				</div>
+			</li>
+			<li id="navBlog">
+				<a href="#">
+					<img src="img/5.jpg" alt=""/>
+					<span class="sdt_active"></span>
+					<span class="sdt_wrap">
+						<span class="sdt_link">Blog</span>
+						<span class="sdt_descr">I write about N'sCafe</span>
+					</span>
+				</a>
+			</li>
+		</ul>
+	</header>
+
+	<article class="contentArea">
+		<div id="container">
+	        <div id="container">
+				<div id="about">
+					<section  class="content">
+						<h2>N's Cafeとは...</h2>
+							<p>N's Cafeの紹介</p>
+					</section>
+
+					<section  class="content">
+						<h2>日時</h2>
+						<p>11月18日（日）</p>
+						<p>前日までに予約するとドリンクをサービス致します。</p>
+						#if($user)
+						#if($user.getReservation()!=0)
+						<button class="submitBtn">あなたは$user.getReservation()時～予約済みです。</button>
+						#end
+						#end
+						#if($user)
+						<form method="post" action="/front/Reserve?user=$user.getFacebookId()">
+						<input type="radio" name="when" value="11" checked> 11時頃～13時ぐらい
+						<input type="radio" name="when" value="13"> 13時頃～15時ぐらい
+						<input type="radio" name="when" value="15"> 15時頃～17時ぐらい
+						</p>
+						<p><input type="submit" value="予約する"></p>
+						#end
+						#if(!$user)
+							<a href="/sns/OAuthFacebook"><button class="submitBtn">予約にはFacebookログインが必要です。</button></a>
+						#end
+						</form>
+					</section>
+
+					<section  class="content">
+						<h2>場所</h2>
+						<p>88+(はちはちプラス)</p>
+						<p>JR総武線亀戸駅から徒歩３分。</p>
+						<p>北口改札を出てすぐ左へ、高架下に出ましたら再び左へ、ドンキホーテを右手に交差点を渡り右手に見える「佐野味噌屋」の角を右に、次の角を左に曲がり少し歩きますと左手に「はちはちぷらす」が見えます。</p>
+						<p>〒136-0071 東京都江東区亀戸1-32-10　ＴＭ２ビル 1F</p>
+
+						<figure><img src="img/map.gif" /></figure>
+					</section>
+				</div>
+
+				<div id="staff">
+					<section  class="content">
+						<h2>スタッフ</h2>
+							<ul>
+							<li>鹿島　日布美<a href="http://www.facebook.com/hifumik">facebook</a></li>
+							<li>片元　遥香</li>
+							<li>長澤　優</li>
+							<li>氏家　由貴</li>
+							<li>水野 文翔</li>
+						</ul>
+					</section>
+				</div>
+
+				<div id="collabo">
+					<section  class="content">
+						<h2>主催</h2>
+							<p><a href="http://www.geocities.jp/n_n_partner/">栄養学生団体N</a></p>
+					</section>
+
+					<section  class="content">
+						<h2>場所提供</h2>
+							<p><a href="http://88plus.jp/home.html">88+(はちはちプラス)</a></p>
+						</ul>
+					</section>
+
+					<section  class="content">
+						<h2>ホームページ作成</h2>
+							<p><a href="#">T-cial</a></p>
+						</ul>
+					</section>
+
+				</div>
+				#foreach($menu in $menuList)
+				<div id="menus">
+					<div class="item">
+						<div class="fig">
+							<a href="img/pl01.jpg"><img src="$menu.getServingUrl()" class="photo" /></a>
+							<p>$menu.getTitle()</p>
+						</div>
+						<div class="commentArea"><span class="status">$menu.getPoint() Votes</span><span class="status">$menu.getCommentCounter() Comments</span></div>
+						#if($hasVote)
+							<div class="commentArea"><a href="/front/Vote?menu=$menu.getId()&user=$user.getFacebookId()"><button class="voteBtn">投票する</button></a></div>
+						#end
+						#foreach($comment in $menu.getCommentList)
+							<div class="commentArea">
+								<a class="imgLink" href="https://www.facebook.com/$comment.getFacebookId()"><img src="https://graph.facebook.com/$comment.getFacebookId()/picture" class="userIcon" /></a>
+								<p class="commentBox">$comment.getComment()</p>
+							</div>
+						#end
+						#if($user)
+						<div class="commentArea">
+							<form method="post" action="/front/CommentSubmit?menu=$menu.getId()&user=$user.getFacebookId()" method="post">
+								<a class="imgLink" href="https://www.facebook.com/$user.getFacebookId()"><img src="https://graph.facebook.com/$user.getFacebookId()/picture" class="userIcon" /></a>
+								<textarea class="commentBox" name="comment"></textarea>
+								<input class="submitBtn" type="submit" name="submit" value="コメントする" />
+							</form>
+						</div>
+						#end
+						#if(!$user)
+							<a href="/sns/OAuthFacebook"><button class="submitBtn">コメントはFacebookログインが必要です。</button></a>
+						#end
+					</div>
+					#end
+				</div>
+			</div>
+		</div>
+	</article>
+
+#[[
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript">
+            $(function() {
+				/**
+				* for each menu element, on mouseenter,
+				* we enlarge the image, and show both sdt_active span and
+				* sdt_wrap span. If the element has a sub menu (sdt_box),
+				* then we slide it - if the element is the last one in the menu
+				* we slide it to the left, otherwise to the right
+				*/
+                $('#sdt_menu > li').bind('mouseenter',function(){
+					var $elem = $(this);
+					$elem.find('img')
+						 .stop(true)
+						 .animate({
+							'width':'170px',
+							'height':'170px',
+							'left':'0px'
+						 },400,'easeOutBack')
+						 .andSelf()
+						 .find('.sdt_wrap')
+					     .stop(true)
+						 .animate({'top':'140px'},500,'easeOutBack')
+						 .andSelf()
+						 .find('.sdt_active')
+					     .stop(true)
+						 .animate({'height':'170px'},300,function(){
+						var $sub_menu = $elem.find('.sdt_box');
+						if($sub_menu.length){
+							var left = '170px';
+							if($elem.parent().children().length == $elem.index()+1)
+								left = '-170px';
+							$sub_menu.show().animate({'left':left},200);
+						}
+					});
+				}).bind('mouseleave',function(){
+					var $elem = $(this);
+					var $sub_menu = $elem.find('.sdt_box');
+					if($sub_menu.length)
+						$sub_menu.hide().css('left','0px');
+
+					$elem.find('.sdt_active')
+						 .stop(true)
+						 .animate({'height':'0px'},300)
+						 .andSelf().find('img')
+						 .stop(true)
+						 .animate({
+							'width':'0px',
+							'height':'0px',
+							'left':'85px'},400)
+						 .andSelf()
+						 .find('.sdt_wrap')
+						 .stop(true)
+						 .animate({'top':'25px'},500);
+				});
+            });
+        </script>
+]]#
+</body>
+</html>

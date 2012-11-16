@@ -1,0 +1,49 @@
+		<footer id="footer">
+			<div class="wrapper">
+				<div class="column_4">
+					<h4>私たちの考え</h4>
+					<div class="divider"></div>
+					<ul>
+						<li><a href="">私たちの考え</a></li>
+						<li><a href="">他との比較</a></li>
+						<li><a href="">利用規約</a></li>
+						<li><a href="">FAQ</a></li>
+						<li><a href="">ご意見、ご要望</a></li>
+					</ul>
+				</div>
+				<div class="column_4">
+					<h4>T-cialの使い方</h4>
+					<div class="divider"></div>
+					<ul>
+						<li><a href="">プロフィールを登録</a></li>
+						<li><a href="">先生を探す</a></li>
+						<li><a href="">面談を行う</a></li>
+						<li><a href="">契約する</a></li>
+						<li><a href="">授業を行う</a></li>
+						<li><a href="">授業を行うにあたってのアドバイス</a></li>
+					</ul>
+				</div>
+				<div class="column_4">
+					<h4>運営チーム</h4>
+					<div class="divider"></div>
+					<ul>
+						<li><a href="">お知らせ</a></li>
+						<li><a href="">運営会社</a></li>
+						<li><a href="">チーム</a></li>
+						<li><a href="">採用情報</a></li>
+						<li><a href="">プライバシーポリシー</a></li>
+						<li><a href="">お問い合わせ</a></li>
+					</ul>
+				</div>
+				<div class="column_4">
+					<h4>メディア</h4>
+					<div class="divider"></div>
+					<ul>
+						<li><a href="">各種メディアでの紹介</a></li>
+						<li><a href="">Facebook</a></li>
+						<li><a href="">Twitter</a></li>
+						<li><a href="">You Tube</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>

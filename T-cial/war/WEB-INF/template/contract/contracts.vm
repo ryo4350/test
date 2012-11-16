@@ -1,0 +1,140 @@
+#parse("/WEB-INF/template/layout/head.vm")
+	</head>
+	<body>
+#parse("/WEB-INF/template/layout/topbar.vm")
+
+		<section id="body">
+			<div class="wrapper">
+				<article class="column_1">
+					<header>
+						<h2 class="setting-header">契約一覧</h2>
+					</header>
+
+					<div class="divider"></div>
+
+					<section id="mini-menu">
+						<form id="select-by-student">
+							<select class="input-medium">
+								<option>すべての生徒</option>
+								<option>由柚</option>
+								<option>中根 純</option>
+								<option>笹本 伊吹</option>
+								<option>佐藤 竣亮</option>
+							</select>
+						</form>
+
+						<form id="select-by-student">
+							<select>
+								<option>すべての期間</option>
+								<option>2012/11</option>
+								<option>2012/10</option>
+								<option>2012/9</option>
+								<option>2012/8</option>
+								<option>2012/7</option>
+								<option>2012/6</option>
+								<option>2012/5</option>
+								<option>2012/4</option>
+								<option>2012/3</option>
+								<option>2012/2</option>
+								<option>2012/1</option>
+							</select>
+						</form>
+						<button id="open-apply">＋ 契約書を作る</button>
+					</section>
+
+					<div class="tabs">
+
+						<ul class="nav nav-tabs">
+						    <li class="active"><a href="#">すべて</a></li>
+							<li><a href="contacts">問い合わせ</a></li>
+							<li><a href="complete">授業終了</a></li>
+							<li><a href="incomplete">授業未終了</a></li>
+						</ul>
+					</div>
+
+					<div class="acquaintance">
+						<section class="lesson-header">
+							<a><img src="img/user/6.png" class="pic-s" /><span class="relationship-header">由柚</span></a><span class="suffix">との契約</span>
+							<span class="aside-inf"><span class="math-min">数学</span><span class="science-min">理科</span>
+						</section>
+						<div class="component">
+							<div class="contact-btns">
+								<button class="msg-btn">詳しく見る</button>
+							</div>
+							<div class="contract-status">
+								<span class="signed">契約済</span><span class="incomplete">授業未終了</span>
+							</div>
+							<div class="contract-infs">
+								<div class="contract-inf">
+									<span class="contract-inf-header">契約日:</span>
+									<span class="contract-start">2012年11月11日</span>
+								</div>
+								<div class="contract-inf">
+									<span class="contract-inf-header">授業回数:</span>
+									<span class="contract-start">7<span class="suffix">回</span> /<span class="suffix">全 </span>12<span class="suffix">回</span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="divider"></div>
+
+					<div class="acquaintance">
+						<section class="lesson-header">
+							<a><img src="img/user/6.png" class="pic-s" /><span class="relationship-header">由柚</span></a><span class="suffix">との契約</span>
+							<span class="aside-inf"><span class="math-min">数学</span><span class="science-min">理科</span>
+						</section>
+						<div class="component">
+							<div class="contact-btns">
+								<button class="msg-btn">詳しく見る</button>
+							</div>
+							<div class="contract-status">
+								<span class="signed">契約済</span><span class="complete">授業終了</span>
+							</div>
+							<div class="contract-inf">
+								<div class="contract-inf">
+									<span class="contract-inf-header">契約日:</span>
+									<span class="contract-start">2012年9月28日</span>
+								</div>
+								<div class="contract-inf">
+									<span class="contract-inf-header">全授業終了日:</span>
+									<span class="contract-start">2012年11月2日</span>
+								</div>
+								<div class="contract-inf">
+									<span class="contract-inf-header">授業回数:</span>
+									<span class="contract-start">8<span class="suffix">回</span> /<span class="suffix">全 </span>8<span class="suffix">回</span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="divider"></div>
+
+					<div class="acquaintance">
+						<section class="lesson-header">
+							<a><img src="img/user/8.png" class="pic-s" /><span class="relationship-header">佐藤 竣亮</span></a><span class="suffix">との契約</span>
+							<span class="aside-inf"><span class="ja-min">国語</span>
+						</section>
+						<div class="component">
+							<div class="contact-btns">
+								<button class="msg-btn">詳しく見る</button>
+							</div>
+							<div class="contract-status">
+								<span class="unsigned">未契約</span>
+							</div>
+							<div class="contract-inf">
+								<div class="contract-inf">
+									<span class="contract-inf-header">問い合わせ日:</span>
+									<span class="contract-start">2012年10月17日</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+
+#parse("/WEB-INF/template/layout/right.vm")
+			</div>
+		</section>
+#parse("/WEB-INF/template/layout/footer.vm")
+	</body>
+</html>

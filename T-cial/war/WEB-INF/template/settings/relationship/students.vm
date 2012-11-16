@@ -1,0 +1,86 @@
+#parse("/WEB-INF/template/layout/head.vm")
+	</head>
+	<body>
+#parse("/WEB-INF/template/layout/topbar.vm")
+
+		<section id="body">
+			<div class="wrapper">
+#parse("/WEB-INF/template/layout/left.vm")
+
+				<article class="column_1">
+					<header>
+						<h2 class="setting-header">つながり</h2>
+						<div class="tabs">
+							<ul class="nav nav-tabs">
+							    <li><a href="teachers">先生</a></li>
+								<li class="active"><a href="#">生徒</a></li>
+								<li><a href="parents">保護者</a></li>
+							</ul>
+						</div>
+					</header>
+					<section class="">
+						<div class="acquaintance">
+							<a><img src="img/user/6.png" class="pic-s" /><span class="relationship-header">由柚</span></a>
+							<span class="aside-inf"><span class="en-min">英語</span><span class="math-min">数学</span><span class="science-min">理科</span><span class="aside-icon"><img src="img/star.png"></span><span class="aside-count">13</span><span class="new-icon">契約中</span></span>
+							<div class="contact-btns">
+								<button class="msg-btn">メッセージを送る</button>
+							</div>
+							<div class="component">
+								<h4 class="header-min">由柚さんの先生</h4>
+								<a><img src="img/user/1.png" class="pic-min" /></a>
+								<a><img src="img/user/4.png" class="pic-min" /></a>
+							</div>
+						</div>
+
+						<div class="divider"></div>
+
+						<div class="acquaintance">
+							<a><img src="img/user/12.png" class="pic-s" /><span class="relationship-header">石川 主浩</span></a>
+							<span class="aside-inf"><span class="en-min">英語</span><span class="math-min">数学</span><span class="science-min">理科</span><span class="society-min">理科</span><span class="aside-icon"><img src="../../img/star.png"></span><span class="aside-count">13</span><span class="new-icon">契約中</span></span>
+							<div class="contact-btns">
+								<button class="msg-btn">メッセージを送る</button>
+							</div>
+							<div class="component">
+								<h4 class="header-min">石川 主浩さんの先生</h4>
+								<a><img src="img/user/1.png" class="pic-min" /></a>
+								<a><img src="img/user/5.png" class="pic-min" /></a>
+							</div>
+						</div>
+
+						<div class="divider"></div>
+
+						<div class="acquaintance">
+							<a><img src="img/user/13.png" class="pic-s" /><span class="relationship-header">佐藤 太遥</span></a>
+							<span class="aside-inf"><span class="math-min">数学</span><span class="science-min">理科</span><span class="aside-icon"><img src="img/star.png"></span><span class="aside-count">13</span><span class="new-icon">契約中</span></span>
+							<div class="contact-btns">
+								<button class="msg-btn">メッセージを送る</button>
+							</div>
+							<div class="component">
+								<h4 class="header-min">佐藤 太遥さんの先生</h4>
+								<a><img src="img/user/1.png" class="pic-min" /></a>
+							</div>
+						</div>
+
+						<div class="divider"></div>
+
+						<div class="acquaintance">
+							<a><img src="img/user/14.png" class="pic-s" /><span class="relationship-header">中根 純</span></a>
+							<span class="aside-inf"><span class="en-min">英語</span><span class="math-min">数学</span><span class="ja-min">国語</span><span class="aside-icon"><img src="img/star.png"></span><span class="aside-count">13</span><span class="new-icon">契約中</span></span>
+							<div class="contact-btns">
+								<button class="msg-btn">メッセージを送る</button>
+							</div>
+							<div class="component">
+								<h4 class="header-min">中根 純さんの先生</h4>
+								<a><img src="img/user/1.png" class="pic-min" /></a>
+								<a><img src="img/user/4.png" class="pic-min" /></a>
+								<a><img src="img/user/5.png" class="pic-min" /></a>
+								<a><img src="img/user/10.png" class="pic-min" /></a>
+							</div>
+						</div>
+					</section>
+				</article>
+			</div>
+		</section>
+#parse("/WEB-INF/template/layout/footer.vm")
+	</body>
+</html>

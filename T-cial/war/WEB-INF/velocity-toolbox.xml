@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+  <toolbox>
+    <tool>
+      <key>date</key>
+      <scope>application</scope>
+      <class>org.apache.velocity.tools.generic.DateTool</class>
+    </tool>
+    <tool>
+      <key>esc</key>
+      <scope>application</scope>
+      <class>org.apache.velocity.tools.generic.EscapeTool</class>
+    </tool>
+    <tool>
+      <key>number</key>
+      <scope>application</scope>
+      <class>org.apache.velocity.tools.generic.NumberTool</class>
+    </tool>
+    <tool>
+      <key>params</key>
+      <scope>request</scope>
+      <class>org.apache.velocity.tools.view.tools.ParameterParser</class>
+    </tool>
+    <tool>
+      <key>link</key>
+      <scope>request</scope>
+      <class>org.apache.velocity.tools.view.tools.LinkTool</class>
+    </tool>
+<!--
+    <tool>
+      <key>prop</key>
+      <scope>application</scope>
+      <class>com.quiz.common.Property</class>
+    </tool>
+    <tool>
+      <key>parm</key>
+      <scope>application</scope>
+      <class>com.quiz.common.Params</class>
+    </tool>
+-->
+  </toolbox>

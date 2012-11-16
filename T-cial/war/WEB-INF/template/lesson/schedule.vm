@@ -1,0 +1,279 @@
+#parse("/WEB-INF/template/layout/head.vm")
+
+		<!-- datepicker -->
+#[[		<script>
+		    $(function() {
+		        $( "#datepicker" ).datepicker();
+		        $( "#anim" ).change(function() {
+		            $( "#datepicker" ).datepicker( "option", "showAnim", $( this ).val() );
+		        });
+		        $( "#date-edit" ).datepicker();
+		        $( "#anim" ).change(function() {
+		            $( "#datepicker" ).datepicker( "option", "showAnim", $( this ).val() );
+		        });
+		        $( "#date-edit-1" ).datepicker();
+		        $( "#anim" ).change(function() {
+		            $( "#datepicker" ).datepicker( "option", "showAnim", $( this ).val() );
+		        });
+		    });
+		 </script>
+
+		<!-- timepicker -->
+		 <script>
+		 	$(function() {
+		 		$('#start').timepicker({
+					'minTime': '9:00am',
+					'maxTime': '11:00pm'
+				});
+		 		$("#end").timepicker({
+					'minTime': '10:00am',
+					'maxTime': '0:00am'
+				});
+		 		$('#start-edit').timepicker({
+					'minTime': '9:00am',
+					'maxTime': '11:00pm'
+				});
+		 		$("#end-edit").timepicker({
+					'minTime': '10:00am',
+					'maxTime': '0:00am'
+				});
+		 		$('#start-edit-1').timepicker({
+					'minTime': '9:00am',
+					'maxTime': '11:00pm'
+				});
+		 		$("#end-edit-1").timepicker({
+					'minTime': '10:00am',
+					'maxTime': '0:00am'
+				});
+
+		 	});
+		 </script>
+
+		<!-- 予定変更の開閉 -->
+		 <script>
+			$(function() {
+				$('#edit').hide();
+				$('#open').click(function() {
+					$('#edit').slideUp();
+					if($('#edit').css('display')=='none'){
+						$('#edit').slideDown();
+					}
+				});
+			});
+		 </script>
+
+		<!-- 新規予定作成の開閉 -->
+		 <script>
+			$(function() {
+				$('#new').hide();
+				$('#open-apply-btn').click(function() {
+					$('#new').slideUp();
+					if($('#new').css('display')=='none'){
+						$('#new').slideDown();
+					}
+				});
+			});
+		 </script>]]#
+	</head>
+	<body>
+#parse("/WEB-INF/template/layout/topbar.vm")
+
+		<section id="body">
+			<div class="wrapper">
+				<article class="column_1">
+					<section id="mini-menu">
+						<form id="select-by-student">
+							<select class="input-medium">
+								<option>すべての生徒</option>
+								<option>由柚</option>
+								<option>中根 純</option>
+								<option>笹本 伊吹</option>
+								<option>佐藤 竣亮</option>
+							</select>
+						</form>
+
+						<form id="select-by-teacher">
+							<select class="input-medium">
+								<option>あなたの授業</option>
+								<option>すべての先生</option>
+								<option>桜井啓太</option>
+								<option>深川道陽</option>
+							</select>
+						</form>
+
+						<button id="open-apply-btn">＋ 新しい予定</button>
+					</section>
+
+					<section class="add" id="new">
+						<h2 id="add-header">新規予定作成</h2>
+
+						<form>
+							<select class="input-medium" id="select-student">
+								<option>生徒を選択</option>
+								<option>由柚</option>
+								<option>中根 純</option>
+								<option>笹本 伊吹</option>
+								<option>佐藤 竣亮</option>
+							</select>
+
+							<div class="subjects">
+								<select id="select-subject" class="input-small">
+									<option>科目を選択</option>
+									<option>数学</option>
+									<option>英語</option>
+									<option>国語</option>
+									<option>理科</option>
+									<option>社会</option>
+									<option>その他</option>
+								</select>
+
+								<select id="select-subject" class="input-small">
+									<option>科目を選択</option>
+									<option>数学</option>
+									<option>英語</option>
+									<option>国語</option>
+									<option>理科</option>
+									<option>社会</option>
+									<option>その他</option>
+								</select>
+							</div>
+
+							<div class="sections">
+								<input type="text" id="section_!" class="input-small section" placeholder="単元を記入" />
+
+								<input type="text" id="section_2" class="input-small section" placeholder="単元を記入" />
+
+								<input type="text" id="section_3" class="input-small section" placeholder="単元を記入" />
+							</div>
+
+							<div id="datetimepicker">
+								<input type="text" id="datepicker" class="input-small datepicker" placeholder="日付" />
+
+								<input type="text" id="start" class="input-small start" placeholder="開始時刻" />～
+
+								<input type="text" id="end" class="input-small" placeholder="終了時刻" />
+
+							</div>
+
+							<div id="repeat">
+								<input type="checkbox" id="is-repeat" /><label for="is-repeat" class="chaeckbox">同じ時間、曜日で繰り返す</label>
+							</div>
+
+							<input type="submit" id="add-btn" value="予定作成" />
+
+						</form>
+					</section>
+
+					<div class="tabs">
+
+						<ul class="nav nav-tabs">
+						    <li class="active"><a href="#">予定</a></li>
+							<li><a href="report">レポート</a></li>
+							<li><a href="note">ノート</a></li>
+							<li><a href="homework">宿題</a></li>
+						</ul>
+					</div>
+
+					<article class="report">
+						<section class="lesson-header">
+							<a href=""><img src="../img/user/6.png" class="pic-s" /><span class="lessonn-header-name">由柚</span></a><span class="suffix">の授業</span><span class="last-update">last updated:12/1</span>
+						</section>
+						<div class="component">
+							<form>
+								<a class="writer" href="../user/user"><img src="../img/user/1.png" class="pic-min" /><span class="partner-name">坂本 諒</span></a>
+								<span class="report-inf">
+									<span class="date" id="editable-date">2012年11月27日</span>
+									<span class="start" id="editable-start">20:00</span>
+									<span id="">-</span>
+									<span class="end" id="editable-end">21:30</span>
+								</span>
+								<div class="subjects">
+									<span  id="editable-subject" class="math">数学</span>
+									<span  id="editable-section" class="other">二次関数</span>
+								</div>
+							</form>
+							<div class="btns">
+								<button class="open-btn" id="open">編集する</button>
+								<button class="delete-btn">削除</button>
+							</div>
+						</div>
+					</article>
+
+					<section class="apply-lesson" id="edit">
+						<h3 class="edit-header">予定変更</h3>
+
+						<form>
+							<div class="subjects">
+								<select id="select-subject" class="input-small">
+									<option>科目を選択</option>
+									<option selected="selected">数学</option>
+									<option>英語</option>
+									<option>国語</option>
+									<option>理科</option>
+									<option>社会</option>
+									<option>その他</option>
+								</select>
+
+								<select id="select-subject" class="input-small">
+									<option>科目を選択</option>
+									<option>数学</option>
+									<option>英語</option>
+									<option>国語</option>
+									<option>理科</option>
+									<option>社会</option>
+									<option>その他</option>
+								</select>
+							</div>
+
+							<div class="sections">
+								<input type="text" id="section_!" class="input-small section" placeholder="単元を記入" />
+
+								<input type="text" id="section_2" class="input-small section" placeholder="単元を記入" />
+
+								<input type="text" id="section_3" class="input-small section" placeholder="単元を記入" />
+							</div>
+
+							<div id="datetimepicker">
+								<input type="text"  id="date-edit-1" class="input-small datepicker" value="11/27/2012" />
+
+								<input type="text"  id="start-edit-1" class="input-small start" value="8:00pm" />～
+
+								<input type="text" id="end-edit-1" class="input-small" value="9:30pm" />
+
+								<input type="submit" id="apply-btn" value="変更" />
+							</div>
+						</form>
+					</section>
+
+					<div class="divider"></div>
+
+					<article class="report">
+						<section class="lesson-header">
+							<a href=""><img src="../img/user/6.png" class="pic-s" /><span class="lessonn-header-name">由柚</span></a><span class="suffix">の授業</span><span class="last-update">last updated:12/1</span>
+						</section>
+						<div class="component">
+							<a class="writer" href="../user/user"><img src="../img/user/1.png" class="pic-min" /><span class="partner-name">坂本 諒</span></a>
+							<span class="report-inf">
+								<span class="date" id="editable-date">2012年11月29日</span>
+								<span class="start" id="editable-start">22:00</span>
+								<span id="">-</span>
+								<span class="end" id="editable-end">23:30</span>
+							</span>
+							<div class="subjects">
+								<span class="math" id="editable-subject">数学</span>
+								<span class="other" id="editable-section">二次方程式</span>
+							</div>
+							<div class="btns">
+								<button class="open-btn">編集する</button>
+								<button class="delete-btn">削除</button>
+							</div>
+						</div>
+					</article>
+				</article>
+#parse("/WEB-INF/template/layout/right.vm")
+
+			</div>
+		</section>
+#parse("/WEB-INF/template/layout/footer.vm")
+	</body>
+</html>

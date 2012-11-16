@@ -1,0 +1,254 @@
+@CHARSET "UTF-8";
+
+/*lesson-header----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#mini-menu {
+	margin: 20px;
+	overflow: hidden;
+}
+
+#select-by-student {
+	float: left;
+	margin-right: 20px;
+}
+
+#select-by-teacher {
+	float: left;
+}
+
+#open-apply-btn {
+	float: right;
+	background: #15b0cf;
+}
+
+/*add--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.add {
+	position: relative;
+	margin: 0px 10px 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+#add-header {
+	font-size: 14px;
+	color: #333;
+	margin-bottom: 5px;
+}
+
+#select-student {
+	display: inline;
+	margin-right: 20px;
+}
+
+#datetimepicker, .subjects, .sections {
+	margin-top: 10px;
+}
+
+.datetimepick {
+	font-size:14px;
+	color: #333;
+}
+
+#select-subject {
+	margin-right: 20px;
+}
+
+#repeat {
+	margin-top: 5px;
+}
+
+#homework {
+	margin-left: 20px;
+}
+
+#add-btn {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	padding: 3px 6px 2px;
+	color: #fff;
+	border: 1px solid #CCC;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	cursor: pointer;
+	background: #15b0cf;
+}
+
+/*timeline---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.report {
+	padding : 15px;
+	overflow: hidden;
+}
+
+.component {
+	position: relative;
+	margin: 10px 0px 0px 60px;
+}
+
+.lesson-header {
+	position: relative;
+}
+
+.lesson-header img {
+	position: absolute;
+}
+
+.lessonn-header-name {
+	margin-left: 60px;
+}
+
+.partner {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	font-size: 14px;
+}
+
+.partner-name {
+	position: relative;
+	bottom: 5px;
+	margin-left: 5px;
+	font-size: 12px;
+}
+
+.report-inf {
+	position: absolute;
+	left:80px;
+	top: 8px;
+	margin-left: 20px;
+	font-size : 12px;
+	color: #666;
+}
+
+.subject {
+	position: absolute;
+	left: 220px;
+}
+
+
+.datepicker {
+	margin-right: 20px;
+}
+
+.date {
+	margin-right: 20px;
+}
+
+.date-edit {
+
+}
+
+.start {
+	margin-right: 3px;
+}
+
+
+.end {
+	margin-right: 20px;
+}
+
+.section {
+	margin-right: 20px;
+}
+
+.report-inf input, .report-inf select {
+	margin-top:-8px;
+}
+
+.btns {
+	position: absolute;
+	bottom: 0px;
+	right:0px;
+}
+
+.open-btn {
+	background: #ec6e72;
+}
+
+.update-btn {
+	background: #15b0cf;
+}
+
+.edit-schedule {
+	margin: 10px 0px 0px 60px;
+}
+
+.edit-header {
+	font-size: 14px;
+	color: #666;
+	margin-bottom: 5px;
+}
+
+#edit-section-input {
+	margin-top: -10px;
+}
+
+.content-body {
+	margin: 10px;
+	width: 450px;
+	font-size: 12px;
+	color: #333;
+	line-height: 1.5;
+}
+
+.suffix {
+	font-size: 10px;
+	margin-left: 5px;
+	color: #333;
+}
+
+.write {
+	position: relative;
+	margin: 10px;
+}
+
+.write textarea {
+	height: 40px;
+}
+
+.report-textarea {
+	margin-top: 10px;
+}
+
+.last-update {
+	float: right;
+	font-size: 12px;
+	color: #666;
+}
+
+.write-btn {
+	background: #15b0cf;
+}
+
+.note-body {
+	position: relative;
+	margin: 10px 0px 30px;
+	width: 450px;
+	font-size: 12px;
+	color: #333;
+	line-height: 1.5;
+}
+
+.note {
+	margin: 10px 100px 20px 0px;
+}
+
+.more {
+	font-size: 10px;
+	text-align: center;
+}
+
+.more a {
+	color: #68727e;
+}
+
+.fin-btn {
+	background: #ec6e72;
+}
+
+.delete-btn {
+	background: #68727e;
+}

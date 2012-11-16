@@ -1,0 +1,151 @@
+#parse("/WEB-INF/template/layout/head.vm")
+		<script>
+			$(function() {
+				if($(".checkbox-switch").attr("checked") == "checked"){
+					$("#slide").css("margin-left","62%");
+				} else {
+					$("#slide").css("margin-left","0%");
+				}
+				$("#switch").click(function() {
+					if($("#slide").attr("style") == "margin-left: 62%;"){
+						$("#slide").css("margin-left","0%");
+					} else {
+						$("#slide").css("margin-left","62%");
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+#parse("/WEB-INF/template/layout/topbar.vm")
+
+		<section id="body">
+			<div class="wrapper">
+#parse("/WEB-INF/template/layout/left.vm")
+
+				<article class="column_1">
+					<header>
+						<h2 class="setting-header">プロフィール変更</h2>
+						<div class="tabs">
+							<ul class="nav nav-tabs">
+							    <li><a href="profile.htm">基本</a></li>
+								<li><a href="education.htm">教育</a></li>
+								<li class="active"><a href="#">指導</a></li>
+								<li><a href="sns.htm">SNS・ブログ</a></li>
+							</ul>
+						</div>
+					</header>
+					<form>
+						<fieldset class="control-group">
+							<label class="setting-label">生徒募集</label>
+							<div class="controls">
+								<label>
+									<input type="checkbox" class="checkbox-switch" checked />
+									<div class="switch" id="switch">
+										<div class="shadow"></div>
+										<div class="border">
+											<div class="knob" id="slide">
+												<div class="circle" id="circle"></div>
+												<div class="labels">
+													<div class="on" id="on">ON</div>
+													<div class="off" id="off">OFF</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</label>
+							</div>
+						</fieldset>
+						<fieldset class="control-group">
+							<label class="setting-label">指導可能科目</label>
+							<div class="controls">
+								<div class="sunject-check">
+									<input type="checkbox" id="math-jh" /><label for="math-jh">中学数学</label>
+									<input type="checkbox" id="math-1a" /><label for="math-1a">数学ⅠA</label>
+									<input type="checkbox" id="math-2b" /><label for="math-2b">数学ⅡB</label>
+									<input type="checkbox" id="math-3c" /><label for="math-3c">数学ⅢC</label>
+								</div>
+								<div class="sunject-check">
+									<input type="checkbox" id="english-jh"/><label for="english-jh">中学英語</label>
+									<input type="checkbox" id="english-h" /><label for="english-h">高校英語</label>
+								</div>
+								<div class="sunject-check">
+									<input type="checkbox" id="japanese-jh"/><label for="male">中学国語</label>
+									<input type="checkbox" id="japanese-contemporary" /><label for="japanese-contemporary">現代文</label>
+									<input type="checkbox" id="japanese-classical" /><label for="japanese-classical">古文</label>
+									<input type="checkbox" id="chinese-classical" /><label for="chinese-classical">漢文</label>
+								</div>
+								<div class="sunject-check">
+									<input type="checkbox" id="science-jh"/><label for="science-jh">中学理科</label>
+									<input type="checkbox" id="physics" /><label for="physics">物理</label>
+									<input type="checkbox" id="chemistry" /><label for="chemistry">化学</label>
+									<input type="checkbox" id="biology" /><label for="biology"">生物</label>
+									<input type="checkbox" id="earth" /><label for="earth">地学</label>
+								</div>
+								<div class="sunject-check">
+									<input type="checkbox" id="society-junior-high"/><label for="society-junior-high">中学社会</label>
+									<input type="checkbox" id="japanese-history" /><label for="japanese-history">日本史</label>
+									<input type="checkbox" id="world-history" /><label for="world-history">世界史</label>
+									<input type="checkbox" id="geography" /><label for="geography">地理</label>
+									<input type="checkbox" id="politics" /><label for="politics">倫政</label>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset class="control-group">
+							<label class="setting-label">指導暦</label>
+							<div class="controls">
+								<select>
+									<option></option>
+									<option>0</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+									<option>7</option>
+									<option>8</option>
+									<option>9</option>
+									<option>10～</option>
+								</select>
+								年
+								<select>
+									<option></option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+									<option>7</option>
+									<option>8</option>
+									<option>9</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+								</select>
+								ヶ月
+							</div>
+						</fieldset>
+						<fieldset class="control-group">
+							<label class="setting-label">授業料（一時間当たり）</label>
+							<div class="controls">
+								<input type="text" class="input-min" value="2500" disabled="disabled" /> 円
+							</div>
+						</fieldset>
+						<fieldset class="control-group">
+							<label class="setting-label">合格実績</label>
+							<div class="controls">
+								<textarea type="text" class="input-large"></textarea>
+							</div>
+						</fieldset>
+						<div class="control-btn">
+							<input type="submit" class="submit-btn" value="変更"　/>
+						</div>
+					</form>
+				</article>
+			</div>
+		</section>
+#parse("/WEB-INF/template/layout/footer.vm")
+	</body>
+</html>

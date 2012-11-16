@@ -1,0 +1,61 @@
+		<header id="header">
+			<div id="top-nav">
+				<div class="wrapper">
+					<a href="schedule"><h1 id="logo">
+						オンライン家庭教師・個別指導塾のT-cialのT-cial
+					</h1></a>
+					<nav id="util">
+						<ul class="dropdown-menu">
+							<li>
+								<a><img src="../img/user/1.png" class="pic-ss" /><span id="topbar-username">坂本諒</span><span class="caret"></span></a>
+								<ul id="dropdown" >
+									<li><a href="../settings/account">アカウント設定</a></li>
+									<li><a href="../settings/profile">プロフィール変更</a></li>
+									<li><a href="../settings/password">パスワード変更</a></li>
+									<li><a href="../settings/teachers">つながり</a></li>
+									<li class="dropdown-divide"><a href="../settings/requirement">契約設定</a></li>
+									<li><a href="">ログアウト</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div id="bottom-nav">
+				<div class="wrapper">
+					<nav>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="../lesson/schedule">授業</a>
+								<ul id="lesson-dropdown">
+									<li><a href="../lesson/schedule">授業予定</a></li>
+									<li><a href="../lesson/report">レポート</a></li>
+									<li><a href="../lesson/note">ノート</a></li>
+									<li><a href="../lesson/homework">宿題</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="../message/messages">メッセージ</a>
+								<ul id="message-dropdown">
+									<li><a href="../message/messages">メッセージ一覧</a></li>
+									<li><a href="../message/new">新規メッセージを作成</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="../contract/contracts">契約</a>
+								<ul id="contract-dropdown">
+									<li><a href="../contract/contracts">契約一覧</a></li>
+									<li><a href="../contract/create">契約書作成</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+					<form id="topbar-search">
+						<input type="search" class="input-medium" id="searchForm" placeholder="先生を検索" />
+
+						<input type="submit" id="searchBtn" value="検索" />
+					</form>
+
+				</div>
+			</div>
+		</header>

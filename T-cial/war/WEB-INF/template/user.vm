@@ -1,0 +1,181 @@
+#parse("/WEB-INF/template/layout/head.vm")
+	</head>
+	<body>
+#parse("/WEB-INF/template/layout/topbar.vm")
+
+		<section id="body">
+			<div class="wrapper">
+				<article class="column_1">
+					<article id="resume">
+						<header id="resume-header">
+							<section id="summary">
+								<section class="contact-btns">
+									<button class="contact-btn">相談フォームはこちら</button>
+									<button class="msg-btn">メッセージを送る</button>
+								</section>
+								<figure class="profile-picture">
+									<img src="../img/user/1.png" class="pic-m" />
+								</figure>
+
+								<h2 id="summary-header">坂本 諒</h2>
+								<span id="age">age:24</span><span id="sex">男</span>
+								<p id="address">横浜市神奈川区</p>
+								<p id="current-work">横浜国立大学大学院(休学中)</p>
+							</section>
+
+							<div class="divider"></div>
+
+							<section id="extention-summary">
+								<section class="resume-content">
+									<h3>自己紹介</h3>
+									<p id="introduce"></p>
+								</section>
+								<section class="resume-content">
+									<h3>指導タイプ</h3>
+									<p id="teaching-type"></p>
+								</section>
+								<section class="resume-content">
+									<h3>興味関心</h3>
+									<p id="interest"></p>
+								</section>
+								<section class="resume-content">
+									<h3>つながり</h3>
+									<section class="connection">
+										<h4>生徒</h4>
+									</section>
+									<section class="connection">
+										<h4>先生</h4>
+									</section>
+								</section>
+
+							</section>
+						</header>
+
+						<section class="profile">
+							<header class="profile-header">
+								<h2>指導</h2>
+							</header>
+							<div class="divider"></div>
+							<section class="profile-body">
+								<section  class="resume-content">
+									<h3 id="policy">指導方針</h3>
+									<p></p>
+								</section>
+								<section  class="resume-content">
+									<h3 id="subject">指導可能科目</h3>
+									<table id="subject-table">
+										<thead>
+											<tr>
+												<th class="subject-title">科目</th>
+												<th class="subject-header">高校</th>
+												<th class="subject-header">中学</th>
+												<th class="subject-header">小学生</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="subject-category">数学/算数</td>
+												<td><span class="math">数学ⅠAⅡBⅢC</span></td>
+												<td><span class="math">中学数学</span></td>
+												<td><span class="math">算数</span></td>
+											</tr>
+											<tr>
+												<td class="subject-category">英語</td>
+												<td><span class="english">高校英語</span></td>
+												<td><span class="english">中学英語</span></td>
+												<td><span class="english">小学英語</span></td>
+											</tr>
+											<tr>
+												<td class="subject-category">国語</td>
+												<td><span class="japanese">現代文</span></td>
+												<td><span class="japanese">中学国語</span></td>
+												<td><span class="japanese">小学国語</span></td>
+											</tr>
+											<tr>
+												<td class="subject-category">理科</td>
+												<td><span class="science">物理</span><span class="science">化学</span></td>
+												<td><span class="science">中学理科</span></td>
+												<td><span class="science">小学理科</span></td>
+											</tr>
+											<tr>
+												<td class="subject-category">社会</td>
+												<td><span class="society">日本史</span></td>
+												<td><span class="society">中学社会</span></td>
+												<td><span class="society">小学社会</span></td>
+											</tr>
+										</tbody>
+									</table>
+									<h3>合格実績</h3>
+									<ul>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+								</section>
+							</section>
+						</section>
+
+						<section class="profile">
+							<header class="profile-header">
+								<h2>教育</h2>
+							</header>
+							<div class="divider"></div>
+							<section class="profile-body">
+								<section  class="resume-content">
+									<h3>中学校:<span class="school-name">福岡市立姪浜中学校</span></h3>
+										<p class="school-body"><span class="term">2000～2003</span><span class="activity">主なアクティビティ:サッカー部</span></p>
+								</section>
+								<section  class="resume-content">
+									<h3>高校:<span class="school-name">福岡県立修猷館高等学校</span></h3>
+										<p class="school-body"><span class="term">2003～2006</span><span class="activity">主なアクティビティ:ヨット部</span></p>
+								</section>
+								<section  class="resume-content">
+									<h3>大学:<span class="school-name">横浜国立大学</span></h3>
+										<p class="school-body"><span class="term">2006～2010</span><span class="activity">主なアクティビティ:ヨット部</span></p>
+								</section>
+								<section  class="resume-content">
+									<h3>大学院:<span class="school-name">横浜国立大学大学院</span></h3>
+										<p class="school-body"><span class="term">2010～現在</span><span class="activity">主なアクティビティ:T-cial,ヨット</span></p>
+								</section>
+								<section  class="resume-content">
+									<h3>その他</h3>
+								</section>
+							</section>
+						</section>
+						<section class="profile">
+							<header class="profile-header">
+								<h2>仕事</h2>
+							</header>
+							<div class="divider"></div>
+							<section class="profile-body">
+								<h3>なし</h3>
+							</section>
+						</section>
+
+
+						<section class="profile">
+							<header class="profile-header">
+								<h2>SNS･ブログ</h2>
+							</header>
+							<div class="divider"></div>
+							<section class="profile-body">
+								<section  class="resume-content">
+									<h3 class="sub-header">twitter:<a href="https://twitter.com/ryo4350" class="media-link"  target=”_blank”>@ryo4350</a></h3>
+								</section>
+								<section  class="resume-content">
+									<h3 class="sub-header">facebook:<a href="http://www.facebook.com/ryo4350" class="media-link"  target=”_blank”>http://www.facebook.com/ryo4350</a></h3>
+								</section>
+								<section  class="resume-content">
+									<h3 class="sub-header">blog:<a class="media-link" target=”_blank”>まだないよ</p></h3>
+								</section>
+							</section>
+						</section>
+					</article>
+				</article>
+
+#parse("/WEB-INF/template/layout/right.vm")
+			</div>
+		</section>
+#parse("/WEB-INF/template/layout/footer.vm")
+	</body>
+</html>

@@ -1,0 +1,98 @@
+#parse("/WEB-INF/template/layout/head.vm");
+	<head>
+	<body>
+#parse("/WEB-INF/template/layout/topbar.vm");
+
+		<section id="body">
+			<div class="wrapper">
+#parse("/WEB-INF/template/layout/left.vm");
+				<article class="column_1">
+					<header>
+						<h2 class="setting-header">プロフィール変更</h2>
+						<div class="tabs">
+							<ul class="nav nav-tabs">
+							    <li><a href="profile.htm">基本</a></li>
+								<li><a href="education.htm">教育</a></li>
+								<li><a href="teaching.htm">指導</a></li>
+								<li class="active"><a href="#">SNS・ブログ</a></li>
+							</ul>
+						</div>
+					</header>
+					<form>
+						<fieldset class="control-group">
+							<label class="setting-label">Twitter</label>
+							<div class="controls">
+								<input type="text" class="input-medium" value="@ryo4350" />
+								<select class="publication">
+									<option>非公開</option>
+									<option>契約者のみ</option>
+									<option selected="selected">公開</option>
+								</select>
+							</div>
+						</fieldset>
+						<fieldset class="control-group">
+							<label class="setting-label">facebook</label>
+							<div class="controls">
+								<input type="text" class="input-medium" value="www.facebook.com/ryo4350"  />
+								<select class="publication">
+									<option>非公開</option>
+									<option>契約者のみ</option>
+									<option selected="selected">公開</option>
+								</select>
+							</div>
+						</fieldset>
+						<fieldset class="control-group">
+							<label class="setting-label">mixi</label>
+							<div class="controls">
+								<input type="text" class="input-medium" />
+								<select class="publication">
+									<option>非公開</option>
+									<option>契約者のみ</option>
+									<option selected="selected">公開</option>
+								</select>
+							</div>
+						</fieldset>
+						<fieldset class="control-group">
+							<label class="setting-label">linkedIn</label>
+							<div class="controls">
+								<input type="text" class="input-medium" />
+								<select class="publication">
+									<option>非公開</option>
+									<option>契約者のみ</option>
+									<option selected="selected">公開</option>
+								</select>
+							</div>
+						</fieldset>
+						<fieldset class="control-group">
+							<label class="setting-label">LINE ID</label>
+							<div class="controls">
+								<input type="text" class="input-medium" value="ryo4350"  />
+								<select class="publication">
+									<option>非公開</option>
+									<option>契約者のみ</option>
+									<option selected="selected">公開</option>
+								</select>
+							</div>
+						</fieldset>
+						<fieldset class="control-group">
+							<label class="setting-label">ブログ</label>
+							<div class="controls">
+								<input type="text" class="input-medium" />
+								<select class="publication">
+									<option>非公開</option>
+									<option>契約者のみ</option>
+									<option selected="selected">公開</option>
+								</select>
+							</div>
+						</fieldset>
+
+						<div class="control-btn">
+							<input type="submit" class="submit-btn" value="変更" />
+						</div>
+					</form>
+				</article>
+			</div>
+		</section>
+#parse("/WEB-INF/template/layout/footer.vm")
+	</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta charset="utf-8" />
+<meta name="description" content="「T-cial」は、生徒・保護者に本当の価値あるサービスを提供するための家庭教師グループです。" />
+<meta name="keywords" content="横浜,反町,家庭教師,塾,予備校,受験,授業,英語,数学,国語,理科,社会,T-cial、ティーシャル,てぃーしゃる,tcial" />
+<link rel="stylesheet" href="../css/front/beforelogin/style.css" type="text/css" media="screen,print" />
+<link rel="alternate" type="application/rss+xml" title="T-cial RSS Feed" href="RSS URL" />
+<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+<link rel="shortcut icon" href="img/favicon.ico" />
+<title>T-cial - 神奈川・横浜の家庭教師グループ</title>
+</head>
+<body>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+ 	 var js, fjs = d.getElementsByTagName(s)[0];
+ 	 if (d.getElementById(id)) return;
+ 	 js = d.createElement(s); js.id = id;
+ 	 js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=311115812312407";
+ 	 fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	
+	<div id="header">
+		<div class="container">
+			<div class="header-left">
+				<a href="/"><img class="header" title="T-cial" alt ="T-cial" src="../img/logo.jpg" /></a>
+			</div>
+			<div class="header-right">
+				<ul class="menu">
+					<li><a href="#about" title="T-cialのご説明">T-cialとは</a>
+					<li><a href="#comparison" title="T-cialと他塾との比較">他塾との比較</a></li>
+					<li><a href="#start" title="授業を開始するまでの手順">はじめかた</a></li>
+					<li><a href="#teachers" title="T-cialの講師陣">講師のご紹介</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="pankuzu">
+		<a href="/">トップページ</a>
+		>
+		問い合わせフォーム
+	</div>
+
+	<div id="contact">
+		<div class="container">
+			<div class="guide off">入力画面</div>
+			<img class="guidearrow"src="img/arrow41-007.gif" />
+			<div class="guide off">入力内容の確認</div>
+			<img class="guidearrow"src="img/arrow41-007.gif" />
+			<div class="guide on">入力完了</div>
+			<div class="clear"></div>
+			<div class="submitted">
+				<p>問い合わせが完了しました。アクセスいただき、ありがとうございました。</p>
+				<p>返答は原則として24時間以内に行いますが、生徒指導を最優先とするため、それよりも時間がかかる場合もございます。</p>
+				<p>ご了承いただければ幸いです。</p>
+			</div>
+			<div class="btn">
+				<div class="btn-return"><a href="/">トップページへ戻る</a></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div class="container">
+			<div class="fblikebox">
+				<div id="fb-root"></div>
+				<script src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php" type="text/javascript"></script>
+				<script type="text/javascript">FB.init("37d123d702080f94fb4b5117187db439");</script>
+				<fb:fan profile_id="391555060914397" connections="10" width="357" height="200" css="../css/front/beforelogin/style.css" ></fb:fan>
+			</div>		
+			<ul class="footer">
+				<li>
+					<a href="/contact" title="問い合わせフォームへ">授業・面談のお申込み</a>
+				</li>
+				<li>
+					<a href="mailto:user@t-cial.com">お問い合わせ（メール）</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/T_cial" title="T-cialのつぶやきを見る" target="blank">Twitter</a><br>
+					<a href="http://www.facebook.com/tcialcom" title="T-cialのFacebookページを見る" target="blank">Facebook</a><br>
+				</li>
+			</ul>
+			<div class="clear"></div>
+			<div class="copyrights">
+				(c) T-cial 2012
+			</div>
+		</div>
+	</div>
+</body>
+</html>

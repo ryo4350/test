@@ -1,0 +1,89 @@
+#parse("/WEB-INF/template/layout/head.vm")
+	</head>
+	<body>
+#parse("/WEB-INF/template/layout/topbar.vm")
+
+		<section id="body">
+			<div class="wrapper">
+#parse("/WEB-INF/template/layout/left.vm")
+
+				<article class="column_1">
+					<header>
+						<h2 class="setting-header">プロフィール変更</h2>
+						<div class="tabs">
+							<ul class="nav nav-tabs">
+							    <li><a href="profile.htm">基本</a></li>
+								<li class="active"><a href="#">教育</a></li>
+								<li><a href="teaching.htm">指導</a></li>
+								<li><a href="sns.htm">SNS・ブログ</a></li>
+							</ul>
+						</div>
+					</header>					<form>
+						<fieldset class="control-group">
+							<label class="setting-label">中学校</label>
+							<div class="controls">
+								<input type="text" class="input-medium" value="福岡市立姪浜中学校" />
+								<select class="publication">
+									<option>非公開</option>
+									<option>契約者のみ</option>
+									<option selected="selected">公開</option>
+								</select>
+							</div>
+						</fieldset>
+						<fieldset class="control-group">
+							<label class="setting-label">高等学校</label>
+							<div class="controls">
+								<input type="text" class="input-medium" value="福岡県立修猷館高等学校" />
+								<select class="publication">
+									<option>非公開</option>
+									<option>契約者のみ</option>
+									<option selected="selected">公開</option>
+								</select>
+							</div>
+						</fieldset>
+						<fieldset class="control-group">
+							<label class="setting-label">大学</label>
+							<div class="controls">
+								<input type="text" class="input-medium" value="横浜国立大学工学部建設学科建築学コース" />
+								<select class="publication">
+									<option>非公開</option>
+									<option>契約者のみ</option>
+									<option selected="selected">公開</option>
+								</select>
+							</div>
+						</fieldset>
+						<fieldset class="control-group">
+							<label class="setting-label">大学院</label>
+							<div class="controls">
+								<input type="text" class="input-medium" value="横浜国立大学大学院工学府社会空間システム学" />
+								<select class="publication">
+									<option>非公開</option>
+									<option>契約者のみ</option>
+									<option selected="selected">公開</option>
+								</select>
+							</div>
+						</fieldset>
+						<fieldset class="control-group">
+							<label class="setting-label">その他の教育機関</label>
+							<div class="controls">
+								<input type="text" class="input-medium" />
+								<select class="publication">
+									<option>非公開</option>
+									<option>契約者のみ</option>
+									<option selected="selected">公開</option>
+								</select>
+							</div>
+						</fieldset>
+						<div class="control-btn">
+							<button type="submit" class="add-btn" >＋さらに教育機関を追加</button>
+						</div>
+						<div class="control-btn">
+							<input type="submit" class="submit-btn" value="変更" />
+						</div>
+					</form>
+				</article>
+			</div>
+		</section>
+#parse("/WEB-INF/template/layout/footer.vm")
+	</body>
+</html>

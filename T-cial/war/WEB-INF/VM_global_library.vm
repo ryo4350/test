@@ -1,0 +1,32 @@
+## VMファイル共通ライブラリ
+
+## prefix path front VM
+#macro(parsePrefix $views)
+	#set($layout = "/WEB-INF/template/"+ $views)
+	#parse($layout)
+#end
+
+## 画像パス
+#macro(imagePath $file)
+	"/img/$file"
+#end
+
+## チェックボックス用属性設定
+#macro(checkboxAttr $name, $value, $data, $boolean)
+type="checkbox" name="$name" value="$value"
+#if($boolean)
+	#if($data) checked #end
+#else
+	#if($value == $data) checked #end
+#end
+#end
+
+## ラジオボタン用属性設定
+#macro(radioAttr $name, $value, $data, $boolean)
+type="radio" name="$name" value="$value"
+#if($boolean)
+	#if($data) checked #end
+#else
+	#if($value == $data) checked #end
+#end
+#end

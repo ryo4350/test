@@ -1,0 +1,49 @@
+#parse("/WEB-INF/template/layout/head.vm")
+	</head>
+	<body>
+#parse("/WEB-INF/template/layout/topbar.vm")
+
+		<section id="body">
+			<div class="wrapper">
+				<article class="column_1">
+					<header>
+						<h2 class="setting-header">新規メッセージ</h2>
+					</header>
+
+					<div class="divider"></div>
+
+					<article class="report">
+						<form>
+							<fieldset class="control-group">
+								<label class="setting-label">宛先</label>
+								<div class="controls">
+									<select class="input-medium">
+										<option>由柚</option>
+										<option>中根 純</option>
+										<option>笹本 伊吹</option>
+										<option>佐藤 竣亮</option>
+										<option>桜井啓太</option>
+										<option>深川道陽</option>
+									</select>
+								</div>
+							</fieldset>
+							<fieldset class="control-group">
+								<label class="setting-label">本文</label>
+								<div class="controls">
+									<textarea></textarea>
+								</div>
+							</fieldset>
+							<div class="control-btn">
+								<input type="submit" class="submit-btn" value="送信" />
+							</div>
+						</form>
+					</article>
+				</article>
+
+				</article>
+#parse("/WEB-INF/template/layout/right.vm")
+			</div>
+		</section>
+#parse("/WEB-INF/template/layout/footer.vm")
+	</body>
+</html>

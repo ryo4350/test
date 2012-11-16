@@ -1,0 +1,6 @@
+<html>
+<body>
+	<h1>Test VelocityServlet</h1>
+	## if you see this message, VelocityViewServlet might not work.
+</body>
+</html>

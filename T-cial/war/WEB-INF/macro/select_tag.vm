@@ -1,0 +1,34 @@
+## select tag
+
+## Iteration select tag
+##   $name select name attr
+##   $value select selected option value
+##   $prompt true or false set prompt
+#macro(selectIteration $name, $value, $option)
+#set($map = $prop.SnsSetting.Iteration.IterationMap)
+<select id="select_id_$name" name="$name" onchange="$!option.onchange">
+#if($option.prompt)
+	<option value="" >選択してください</option>
+#end
+#foreach($entry in $map.entrySet())
+	<option value="$entry.key" #if($value == $entry.key) selected #end >$entry.value</option>
+#end
+</select>
+#end
+
+## Number select tag
+##   $name select name attr
+##   $from start number
+##   $to end number
+##   $value select selected option value
+##   $prompt true or false set prompt
+#macro(selectNumber $name, $from, $to, $value, $prompt)
+<select name="$name" >
+#if($prompt)
+	<option value="" >選択してください</option>
+#end
+#foreach($i in [${from}..${to}])
+	<option value="$i" #if($value == $i) selected #end >$i</option>
+#end
+</select>
+#end

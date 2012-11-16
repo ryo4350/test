@@ -1,0 +1,175 @@
+#parse("/WEB-INF/template/layout/head.vm")
+
+#[[		<script>
+		    $(function() {
+		        $( "#datepicker" ).datepicker();
+		        $( "#anim" ).change(function() {
+		            $( "#datepicker" ).datepicker( "option", "showAnim", $( this ).val() );
+		        });
+		    });
+		 </script>
+
+		<script>
+			$(function() {
+				$('#new').hide();
+				$('#open-apply-btn').click(function() {
+					$('#new').slideUp();
+					if($('#new').css('display')=='none'){
+						$('#new').slideDown();
+					}
+				});
+			});
+		</script>
+]]#
+
+	</head>
+	<body>
+#parse("/WEB-INF/template/layout/topbar.vm")
+
+		<section id="body">
+			<div class="wrapper">
+				<article class="column_1">
+					<section id="mini-menu">
+						<form id="select-by-student">
+							<select class="input-medium">
+								<option>すべての生徒</option>
+								<option>由柚</option>
+								<option>中根 純</option>
+								<option>笹本 伊吹</option>
+								<option>佐藤 竣亮</option>
+							</select>
+						</form>
+
+						<form id="select-by-teacher">
+							<select class="input-medium">
+								<option>あなたの授業</option>
+								<option>すべての先生</option>
+								<option>桜井啓太</option>
+								<option>深川道陽</option>
+							</select>
+						</form>
+
+						<button id="open-apply-btn">＋ 新しい宿題</button>
+					</section>
+
+					<section class="add" id="new">
+						<h2 id="add-header">宿題を出題</h2>
+
+						<form>
+							<select class="input-medium" id="select-student">
+								<option>生徒を選択</option>
+								<option>由柚</option>
+								<option>中根 純</option>
+								<option>笹本 伊吹</option>
+								<option>佐藤 竣亮</option>
+							</select>
+
+							<select id="select-subject" class="input-small">
+								<option>科目を選択</option>
+								<option>数学</option>
+								<option>英語</option>
+								<option>国語</option>
+								<option>理科</option>
+								<option>社会</option>
+								<option>その他</option>
+							</select>
+
+							<div id="datetimepicker">
+								<input type="text" id="datepicker" class="input-small" placeholder="日付" />
+								<input type="text" id="homework" class="input-large" placeholder="出題内容"  />
+							</div>
+
+							<input type="submit" id="add-btn" value="出題" />
+						</form>
+					</section>
+
+					<div class="tabs">
+						<ul class="nav nav-tabs">
+						    <li><a href="schedule">予定</a></li>
+							<li><a href="report">レポート</a></li>
+							<li><a href="note">ノート</a></li>
+							<li class="active"><a href="homework">宿題</a></li>
+						</ul>
+					</div>
+
+					<article class="report">
+						<section class="lesson-header">
+							<a href=""><img src="../img/user/6.png" class="pic-s" /><span class="lessonn-header-name">由柚</span></a><span class="suffix">の宿題</span><span class="last-update">last updated:12/1</span>
+						</section>
+						<div class="component">
+							<a class="writer" href="../user/user"><img src="../img/user/1.png" class="pic-min" /><span class="partner-name">坂本 諒</span></a>
+							<span class="report-inf">
+								<span class="date" id="editable-date">2012年11月30日</span>
+							</span>
+							<span class="subject" id="editable-subject"><span class="math">数学</span></span>
+							<p class="content-body">p84,85のプラスワン、p86の予習</p>
+							<div class="btns">
+								<button class="fin-btn">終了</button><button class="delete-btn">削除</button>
+							</div>
+						</div>
+					</article>
+
+					<div class="divider"></div>
+
+					<article class="report">
+						<section class="lesson-header">
+							<a href=""><img src="../img/user/6.png" class="pic-s" /><span class="lessonn-header-name">由柚</span></a><span class="suffix">の宿題</span><span class="last-update">last updated:12/1</span>
+						</section>
+						<div class="component">
+							<a class="writer" href=""><img src="../img/user/4.png" class="pic-min" /><span class="partner-name">桜井 啓太</span></a>
+							<span class="report-inf">
+								<span class="date" id="editable-date">2012年11月22日</span>
+							</span>
+							<span class="subject" id="editable-subject"><span class="english">英語</span></span>
+							<p class="content-body">英検3級過去問（2012年1回）解いておく</p>
+							<div class="btns">
+								<button class="fin-btn">終了</button><button class="delete-btn">削除</button>
+							</div>
+						</div>
+					</article>
+
+					<div class="divider"></div>
+
+					<article class="report">
+						<section class="lesson-header">
+							<a href=""><img src="../img/user/6.png" class="pic-s" /><span class="lessonn-header-name">由柚</span></a><span class="suffix">の宿題</span><span class="last-update">last updated:12/1</span>
+						</section>
+						<div class="component">
+							<a class="writer" href="../user/user"><img src="../img/user/4.png" class="pic-min" /><span class="partner-name">桜井 啓太</span></a>
+							<span class="report-inf">
+								<span class="date" id="editable-date">2012年11月15日</span>
+							</span>
+							<span class="subject" id="editable-subject"><span class="english">英語</span></span>
+							<p class="content-body">シス単・700選・英頻（通常通り）</p>
+							<div class="btns">
+								<button class="fin-btn">終了</button><button class="delete-btn">削除</button>
+							</div>
+						</div>
+					</article>
+
+					<div class="divider"></div>
+
+					<article class="report">
+						<section class="lesson-header">
+							<a href=""><img src="../img/user/6.png" class="pic-s" /><span class="lessonn-header-name">由柚</span></a><span class="suffix">の宿題</span><span class="last-update">last updated:12/1</span>
+						</section>
+						<div class="component">
+							<a class="writer" href="../user/user"><img src="../img/user/1.png" class="pic-min" /><span class="partner-name">坂本 諒</span></a>
+							<span class="report-inf">
+								<span class="date" id="editable-date">2012年11月11日</span>
+							</span>
+							<span class="subject" id="editable-subject"><span class="math">数学</span></span>
+							<p class="content-body">教科書p87のQ3,p88のQ1</p>
+							<div class="btns">
+								<button class="fin-btn">終了</button><button class="delete-btn">削除</button>
+							</div>
+						</div>
+					</article>
+				</article>
+
+#parse("/WEB-INF/template/layout/right.vm")
+			</div>
+		</section>
+#parse("/WEB-INF/template/layout/footer.vm")
+	</body>
+</html>

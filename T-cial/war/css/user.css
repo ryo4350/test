@@ -1,0 +1,153 @@
+﻿@CHARSET "UTF-8";
+
+#resume {
+
+}
+
+#resume-header {
+	padding: 5px;
+}
+
+#summary {
+	position: relative;
+	padding: 10px;
+	overflow: hidden;
+}
+
+#summary-header {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.profile-picture {
+	float: left;
+	margin-right:  20px;
+}
+
+#age, #sex {
+	display: inline-block;
+	margin: 5px 10px;;
+	font-size: 12px;
+	color: #666;
+}
+
+#address {
+	padding: 5px;
+	font-size: 12px;
+	color: #666;
+}
+
+#current-work {
+	margin: 5px;
+	font-size: 14px;
+	color: #333;
+}
+
+#contact {
+	float: right;
+}
+
+#contact button {
+	display: block;
+	margin: 5px;
+	padding: 4px 8px 3px;
+	color: #fff;
+	border: 1px solid #CCC;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#extention-summary{
+	clear: both;
+	padding: 10px;
+}
+
+#introduce, #teaching-type, #interest {
+	padding: 5px;
+	font-size: 14px;
+	color: #333;
+}
+
+.connection {
+	padding: 5px;
+}
+
+#resume h2 {
+	font-size: 20px;
+	color: #333;
+}
+
+#resume h3 {
+	font-size: 16px;
+	color: #666;
+}
+
+#resume h4 {
+	font-size: 14px;
+	color: #999;
+}
+
+.profile {
+	padding:5px;
+}
+
+.profile-header {
+	padding: 5px;
+}
+
+.profile-body {
+	padding: 10px;
+}
+
+.resume-content {
+	margin: 10px 0px;
+}
+
+.school-body {
+	margin-top: 3px;
+	font-size: 12px;
+}
+
+.term {
+	color: #666;
+}
+
+.activity{
+	margin-left: 10px;
+	color: #aaa;
+}
+
+#subject-table {
+	margin: 20px auto;
+	width: 90%;
+   	font-size: 13px;
+   	text-align: left;
+}
+
+#subject-table tr {
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+#subject-table th {
+	padding: 10px;
+    background: none repeat scroll 0% 0% rgb(247, 247, 249);
+}
+
+#subject-table td {
+	padding: 10px;
+
+}
+
+.subject-header {
+
+}
+
+.subject-category {
+	width: 25%;
+}
+
+.media-link {
+	font-size:14px;
+}

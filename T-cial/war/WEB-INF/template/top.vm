@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta charset="utf-8" />
+<meta name="description" content="「T-cial」は、生徒・保護者に本当の価値あるサービスを提供するための家庭教師グループです。" />
+<meta name="keywords" content="横浜,反町,家庭教師,塾,予備校,受験,授業,英語,数学,国語,理科,社会,T-cial、ティーシャル,てぃーしゃる,tcial" />
+<link rel="stylesheet" href="../css/front/beforelogin/style.css" type="text/css" media="screen,print" />
+<link rel="alternate" type="application/rss+xml" title="T-cial RSS Feed" href="RSS URL" />
+<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+<link rel="shortcut icon" href="../img/favicon.ico" />
+<title>T-cial - 神奈川・横浜の家庭教師グループ</title>
+</head>
+<body>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+ 	 var js, fjs = d.getElementsByTagName(s)[0];
+ 	 if (d.getElementById(id)) return;
+ 	 js = d.createElement(s); js.id = id;
+ 	 js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=311115812312407";
+ 	 fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<div id="header">
+		<div class="container">
+			<div class="left">
+				<a href="/"><img class="logo" title="T-cial" alt ="T-cial" src="../img/logo.jpg" /></a>
+			</div>
+			<div class="right">
+				<ul class="menu">
+					<li><a href="#about" title="T-cialのご説明">T-cialとは</a>
+					<li><a href="#comparison" title="T-cialと他塾との比較">他塾との比較</a></li>
+					<li><a href="#start" title="授業を開始するまでの手順">はじめかた</a></li>
+					<li><a href="#teachers" title="T-cialの講師陣">講師のご紹介</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="intro">
+		<div class="container">
+			<div class="left">
+				<h1 class="intro">神奈川・横浜の家庭教師グループ</h1>
+				<div class="description">これまでの塾にないような<span>本当の安心と信頼</span>を生徒・保護者に感じてもらいたい…。そのためにうまれた、徹底的に生徒と向き合い、見つめる講師の集団です。</div>
+				<img class="intro-left" title="生徒にとって最高のサービスを実現！" alt="" src="img/first.jpg" />
+				<ul class="socialbtn">
+					<li>
+						<a href="https://twitter.com/share" class="twitter-share-button" data-via="T_cial" data-lang="ja" data-related="T_cial" data-count="none" data-hashtags="T-cial">ツイート</a>
+					</li>
+					<li>
+						<div class="fb-like" data-href="http://www.t-cial.com/" data-send="false" data-width="350" data-show-faces="false"></div>
+					</li>
+			</div>
+			<div class="right">
+				<div id="fb-root"></div>
+				<script src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php" type="text/javascript"></script>
+				<script type="text/javascript">FB.init("37d123d702080f94fb4b5117187db439");</script>
+				<fb:fan profile_id="391555060914397" data-header="false" connections="10" width="520" height="470" css="../css/front/beforelogin/style.css" ></fb:fan>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+	<div id="about">
+		<div class="container">
+			<h1>T-cialはどんな家庭教師グループなの？</h1>
+			<h2>生徒・保護者の満足・信頼・成果を最優先に考え、情報を徹底的にオープンにする講師たちです。</h2>
+			<ul class="list3">
+				<li>
+					<h3>
+					<span>1.</span>
+					チームティーチング</h3>
+					<p>生徒を担当する講師が、バラバラに斡旋されてくるわけではありません。T-cialはチームとして指導にあたります。</p>
+				</li>
+				<li>
+					<h3>
+					<span>2.</span>
+					迅速・確実な報告と連絡</h3>
+					<p>保護者への指導報告や相談への対応速度はピカイチ。従来の塾のように、もどかしい伝言ゲームはありません。</p>
+				</li>
+				<li>
+					<h3>
+					<span>3.</span>
+					最適な授業場所のご提案</h3>
+					<p>最適な勉強場所を柔軟にご提案します。ご自宅、横浜反町のT-cial拠点、Skype等。どこでも分かりやすく教えます。</p>
+				</li>
+			</ul>
+			<div class="more">
+<!--  		<a href="about.html">＞＞ もっと詳しく</a>	-->
+			</div>
+		</div>
+	</div>
+
+	<div id="comparison">
+		<div class="container">
+				<h1>T-cialと他塾の比較</h1>
+					<table class="styleTable">
+						<thead>
+							<tr>
+								<th class="head"></th>
+								<th class="skype">T-cial</th>
+								<th class="direct">個別指導塾</th>
+								<th class="direct">集団指導塾</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="head">入会金＋設備費など</td>
+								<td class="skype">0円</td>
+								<td class="direct">2万円ほど＋1万円/半年ほど</td>
+								<td class="direct">2万円ほど＋1万円/半年ほど</td>
+							</tr>
+							<tr>
+								<td class="head">保護者との連絡</td>
+								<td class="skype">講師と直接、メールでも電話でも、そしていつでも</td>
+								<td class="direct">代表社員から、そこそこ</td>
+								<td class="direct">代表社員から、たまに</td>
+							</tr>
+							<tr>
+								<td class="head">通塾形式</td>
+								<td class="skype">家庭教師、Skype、通塾（選べる）</td>
+								<td class="direct">通塾（時間は選べる）</td>
+								<td class="direct">通塾（時間を選びにくい）</td>
+							</tr>
+							<tr>
+								<td class="head">テキスト</td>
+								<td class="skype">生徒の状況から講師が柔軟に判断</td>
+								<td class="direct">塾が用意する、ある一定の幅から選ぶ</td>
+								<td class="direct">塾が用意するテキスト</td>
+							</tr>
+							<tr>
+								<td class="head">講師の連係</td>
+								<td class="skype">チームとして動く講師陣がしっかり情報共有</td>
+								<td class="direct">バラバラに担当を決めるので、連係はありません</td>
+								<td class="direct">社員講師ならある程度。バイトならなし。</td>
+							</tr>
+						</tbody>
+					</table>
+			</div>
+	</div><div class="clear"></div>
+
+	<div id="start">
+		<div class="container">
+			<h1>はじめかた</h1>
+			<ul class="list3">
+				<li>
+					<h3>
+					<span>1.</span>
+					問い合わせ＋面談</h3>
+					<p>フォームからお問い合わせ→面談をします。</p>
+				</li>
+				<li>
+					<h3><span>2.</span>
+					授業の体験</h3>
+					<p>体験授業で、授業品質を確かめてください。</p>
+				</li>
+				<li>
+					<h3><span>3.</span>
+					授業開始</h3>
+					<p>納得していただいたら、授業スタート！</p>
+				</li>
+			</ul>
+			<div class="contact">
+			<a href="/contact/form" class="btn-contact">専用フォームから問い合わせをする</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="teachers">
+		<div class="container">
+			<h1>講師陣のご紹介</h1>
+			<div class="left">
+				<img class="photo" title="櫻井啓太" src="img/keitasakurai.jpg" />
+				<h2 class="teacher">櫻井啓太</h2><span class="english">英語</span><span class="science">中学理科</span>
+				<div class="divider"></div>
+				<p>
+					T-cial代表。現在は予備校でも教鞭をとりながら、真の意味で生徒・保護者に価値のある教育サービスを創りあげたいと思い、T-cialの設立を行った。個別指導教室での教室長の経験もあり、生徒・保護者、そして共に働く他の講師など、生徒を取り巻く教育環境全体を見据えて最適の行動ができる。
+				</p>
+<!--			<a href="http://www.t-cial.com/" class="btn-teachers">この講師の詳細を見る</a>-->
+			</div>
+
+			<div class="right">
+				<img class="photo" title="深川道陽" alt="" src="img/michiharufukagawa.jpg" />
+				<h2 class="teacher">深川道陽</h2><span class="math">数学</span>
+				<div class="divider"></div>
+				<p>
+					T-cial創立メンバーで、生徒・講師・保護者で使うためのウェブアプリケーションの開発を行なっている。これまでの生徒・保護者からの評価は「熱く語る人」。上辺だけでなく、心の深いところで生徒とつながり、良い方向へ導こうと体でアタックしていくような指導スタイルが持ち味である。
+				</p>
+			</div>
+			<div class="clear"></div>
+
+			<div class="left">
+				<img class="photo" title="坂本諒" src="img/ryosakamoto.jpg" />
+				<h2 class="teacher">坂本諒</h2><span class="english">英語</span><span class="math">数学(ⅢCまで)</span><span class="science">中学理科</span><span class="science">物理</span><span class="science">化学</span><span class="society">中学社会</span><span class="society">日本史</span>
+				<div class="divider"></div>
+				<p>
+					T-cial創立メンバーで、エンジニア。クールで論理的に説明をする姿にファンも多い。国立大学出身とあって教えられる科目は幅広く、なんでも気軽に質問することが可能。また面倒見も良いので、頼り甲斐のある講師である。
+				</p>
+			</div>
+
+			<div class="right">
+				<img class="photo" title="" alt="" src="img/madokatomita.jpg" />
+				<h2 class="teacher">富田まどか</h2><span class="japanese">中学国語</span><span class="japanese">現代文</span>
+				<div class="divider"></div>
+				<p>
+					しっかりとした指導経験があり、特に小学生?中学生の生徒に対して指導が素晴らしい。生徒をきちんと叱ることができるので、学科知識を教えるだけでなく、姿勢や礼儀といった細かい部分まで行き届くのが強み。何より生徒のことを人一倍思いやることができる講師。
+				</p>
+			</div>
+			<div class="clear"></div>
+<!--		<div class="more"><a href="teachers.html">＞＞ 講師一覧を見る</a></div>-->
+		</div>
+	</div>
+
+
+	<div id="footer">
+		<div class="container">
+			<ul class="footer">
+				<li>
+					<a href="/contact" title="問い合わせフォームへ">授業・面談のお申込み</a>
+				</li>
+				<li>
+					<a href="mailto:user@t-cial.com">お問い合わせ（メール）</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/T_cial" title="T-cialのつぶやきを見る" target="blank">Twitter</a><br>
+					<a href="http://www.facebook.com/tcialcom" title="T-cialのFacebookページを見る" target="blank">Facebook</a><br>
+				</li>
+			</ul>
+			<div class="clear"></div>
+			<div class="copyrights">
+				(c) T-cial 2012
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+#parse("/WEB-INF/template/layout/head.vm")
+	</head>
+	<body>
+#parse("/WEB-INF/template/layout/topbar.vm")
+
+		<section id="body">
+			<div class="wrapper">
+#parse("/WEB-INF/template/layout/left.vm")
+
+				<article class="column_1">
+					<header>
+						<h2 class="setting-header">アカウント設定</h2>
+					</header>
+					<div class="divider"></div>
+					<form>
+						<fieldset class="control-group">
+							<label class="setting-label">ユーザID</label>
+							<div class="controls">
+								<input type="text" class="input-medium" value="ryo4350" disabled="disabled" />
+								<select class="publication">
+									<option selected="selected">非公開</option>
+									<option>契約者のみ</option>
+									<option>公開</option>
+								</select>
+							</div>
+						</fieldset>
+						<fieldset class="control-group">
+							<label class="setting-label">メールアドレス</label>
+							<div class="controls">
+								<input type="text" class="input-medium" value="ryo4350@gmail.com" />
+								<select class="publication">
+									<option>非公開</option>
+									<option selected="selected">契約者のみ</option>
+									<option>公開</option>
+								</select>
+							</div>
+						</fieldset>
+						<fieldset class="control-group">
+							<label class="setting-label">スカイプID</label>
+							<div class="controls">
+								<input type="text" class="input-medium" value="ryo4350" />
+								<select class="publication">
+									<option>非公開</option>
+									<option selected="selected">契約者のみ</option>
+									<option>公開</option>
+								</select>
+							</div>
+						</fieldset>
+						<fieldset class="control-group">
+							<label class="setting-label">電話番号</label>
+							<div class="controls">
+								<input type="text" class="input-medium" value="090-2713-2549" />
+								<select class="publication">
+									<option selected="selected">非公開</option>
+									<option>契約者のみ</option>
+									<option>公開</option>
+								</select>
+							</div>
+						</fieldset>
+						<div class="control-btn">
+							<input type="submit" class="submit-btn" />
+						</div>
+					</form>
+				</article>
+			</div>
+		</section>
+#parse("/WEB-INF/template/layout/footer.vm")
+	</body>
+</html>
