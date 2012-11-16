@@ -12,7 +12,7 @@
 
 					<div class="divider"></div>
 
-					<article class="report">
+					<article class="portion">
 						<form>
 							<fieldset class="control-group">
 								<label class="setting-label">宛先</label>

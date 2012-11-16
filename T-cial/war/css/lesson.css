@@ -78,7 +78,8 @@
 }
 
 /*timeline---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.report {
+.portion {
+	position: relative;
 	padding : 15px;
 	overflow: hidden;
 }
@@ -202,7 +203,7 @@
 
 .write {
 	position: relative;
-	margin: 10px;
+	margin-bottom: 10px;
 }
 
 .write textarea {
@@ -223,18 +224,6 @@
 	background: #15b0cf;
 }
 
-.note-body {
-	position: relative;
-	margin: 10px 0px 30px;
-	width: 450px;
-	font-size: 12px;
-	color: #333;
-	line-height: 1.5;
-}
-
-.note {
-	margin: 10px 100px 20px 0px;
-}
 
 .more {
 	font-size: 10px;

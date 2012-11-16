@@ -7,6 +7,6 @@ public class IncompleteController extends Controller {
 
     @Override
     public Navigation run() throws Exception {
-        return forward("WEB-INF/template/contract/incomplete.vm");
+        return forward("/WEB-INF/template/contract/incomplete.vm");
     }
 }

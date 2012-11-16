@@ -13,65 +13,66 @@
 
 					<div class="divider"></div>
 
-					<article class="report">
+					<article class="portion">
 						<section class="lesson-header">
 							<a href="user"><img src="../img/user/6.png" class="pic-s" /><span class="lessonn-header-name">由柚</span></a><span class="suffix">とのメッセージ</span>
 						</section>
-						<div class="component">
-							<section class="write">
+						<section class="component">
+							<a class="writer" href="user"><img src="../img/user/1.png" class="pic-min" /><span class="partner-name">坂本 諒</span></a><span class="note-date">2012年12月1日</span>
+							<div class="write">
 								<form>
 									<textarea class="input-xlarge" placeholder="新しいメッセージ"></textarea>
 									<div class="btns">
 										<input type="submit" class="write-btn" value="送信" />
 									</div>
 								</form>
+							</div>
+						</section>
+
+						<div class="divider"></div>
+
+						<section class="component">
+							<a class="writer" href="user"><img src="../img/user/1.png" class="pic-min" /><span class="partner-name">坂本 諒</span></a><span class="note-date">2012年12月1日</span>
+							<section class="msg-body">
+								<p><span class="new-icon">new!</span>【実力テスト範囲】英語 ・中1〜2の全範囲 ・中3のプログラム3まで。</p>
 							</section>
+						</section>
 
-							<div class="divider"></div>
+						<div class="divider"></div>
 
-							<section class="message">
-								<a class="writer" href="user"><img src="../img/user/1.png" class="pic-min" /><span class="partner-name">坂本 諒</span></a><span class="note-date">2012年12月1日</span>
-								<section class="message-body">
-									<p><span class="new-icon">new!</span>【実力テスト範囲】英語 ・中1〜2の全範囲 ・中3のプログラム3まで。</p>
-								</section>
+						<section class="component">
+							<a class="writer" href="user"><img src="../img/user/6.png" class="pic-min" /><span class="partner-name">由柚</span></a><span class="note-date">2012年11月31日</span>
+							<section class="msg-body">
+								<p>【実力テスト範囲】英語 ・中1〜2の全範囲 ・中3のプログラム3まで。</p>
 							</section>
+						</section>
 
-							<div class="divider"></div>
+						<div class="divider"></div>
 
-							<section class="message">
-								<a class="writer" href="user"><img src="../img/user/6.png" class="pic-min" /><span class="partner-name">由柚</span></a><span class="note-date">2012年11月31日</span>
-								<section class="message-body">
-									<p>【実力テスト範囲】英語 ・中1〜2の全範囲 ・中3のプログラム3まで。</p>
-								</section>
+						<section class="component">
+							<a class="writer" href="user"><img src="../img/user/1.png" class="pic-min" /><span class="partner-name">坂本 諒</span></a><span class="note-date">2012年11月26日</span>
+							<section class="msg-body">
+								<p>【実力テスト範囲】英語 ・中1〜2の全範囲 ・中3のプログラム3まで。</p>
 							</section>
+						</section>
 
-							<div class="divider"></div>
+						<div class="divider"></div>
 
-							<section class="message">
-								<a class="writer" href="user"><img src="../img/user/1.png" class="pic-min" /><span class="partner-name">坂本 諒</span></a><span class="note-date">2012年11月26日</span>
-								<section class="message-body">
-									<p>【実力テスト範囲】英語 ・中1〜2の全範囲 ・中3のプログラム3まで。</p>
-								</section>
+						<section class="component">
+							<a class="writer" href="user"><img src="../img/user/6.png" class="pic-min" /><span class="partner-name">由柚</span></a><span class="note-date">2012年11月25日</span>
+							<section class="msg-body">
+								<p>【実力テスト範囲】英語 ・中1〜2の全範囲 ・中3のプログラム3まで。</p>
 							</section>
+						</section>
 
-							<div class="divider"></div>
+						<div class="divider"></div>
 
-							<section class="message">
-								<a class="writer" href="user"><img src="../img/user/6.png" class="pic-min" /><span class="partner-name">由柚</span></a><span class="note-date">2012年11月25日</span>
-								<section class="message-body">
-									<p>【実力テスト範囲】英語 ・中1〜2の全範囲 ・中3のプログラム3まで。</p>
-								</section>
+						<section class="component">
+							<a class="writer" href="user"><img src="../img/user/1.png" class="pic-min" /><span class="partner-name">坂本 諒</span></a><span class="note-date">2012年12月1日</span>
+							<section class="msg-body">
+								<p>【実力テスト範囲】英語 ・中1〜2の全範囲 ・中3のプログラム3まで。</p>
 							</section>
-
-							<div class="divider"></div>
-
-							<section class="message">
-								<a class="writer" href="user"><img src="../img/user/1.png" class="pic-min" /><span class="partner-name">坂本 諒</span></a><span class="note-date">2012年12月1日</span>
-								<section class="message-body">
-									<p>【実力テスト範囲】英語 ・中1〜2の全範囲 ・中3のプログラム3まで。</p>
-								</section>
-							</section>
-						</div>
+						</section>
 					</article>
 				</article>
 

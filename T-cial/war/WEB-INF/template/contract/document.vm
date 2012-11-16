@@ -15,11 +15,11 @@
 
 					<section class="derection">
 						<div class="derection-teacher">
-							<img src="img/user/1.png" class="pic-min" /><div class="derection-user">坂本 諒</div>
+							<img src="../img/user/1.png" class="pic-min" /><div class="derection-user">坂本 諒</div>
 						</div>
 						<div class="to">＞</div>
 						<div class="derection-teacher">
-							<img src="img/user/6.png" class="pic-min" /><div class="derection-user">由柚</div>
+							<img src="../img/user/6.png" class="pic-min" /><div class="derection-user">由柚</div>
 						</div>
 					</section>
 
